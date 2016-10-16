@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
+import PortfolioReducer from './PortfolioReducer';
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state
+export default combineReducers({
+  portfolioItems: PortfolioReducer
 });
-
-export default rootReducer;
