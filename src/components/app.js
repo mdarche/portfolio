@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import NavBar from './Nav_bar';
+import Header from './Header';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <Header />
         {this.props.children}
       </div>
     );

@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import PortfolioReducer from './PortfolioReducer';
+import categories from './PortfolioReducer';
 
-export default combineReducers({
-  portfolioItems: PortfolioReducer
+const rootReducer = combineReducers({
+  categories
 });
+
+export default rootReducer;
