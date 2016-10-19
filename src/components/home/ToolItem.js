@@ -1,0 +1,37 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+import ScrollReveal from '../../../style/ScrollReveal';
+
+
+export default class ToolItem extends Component {
+  componentDidMount() {
+    const config = {
+      origin: 'bottom',
+      duration: 600,
+      delay: 130,
+      distance: '50px',
+      opacity: 0,
+      scale: 1.2,
+      easing: 'ease',
+      mobile: true
+    };
+    ScrollReveal.reveal(this.refs.box1, config);
+  }
+
+  render() {
+    const { url, title, image } = this.props.tool;
+
+    return (
+      <Link to={url} target="_blank">
+        <div className="col-sm-3 col-xs-6 tool-container">
+          <img
+            className="tool-image"
+            alt={title}
+            src={image}
+            ref='box1'
+          />
+        </div>
+      </Link>
+    );
+  }
+}
