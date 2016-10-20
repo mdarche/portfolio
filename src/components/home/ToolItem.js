@@ -6,12 +6,12 @@ import ScrollReveal from '../../../style/ScrollReveal';
 export default class ToolItem extends Component {
   componentDidMount() {
     const config = {
-      origin: 'bottom',
+      origin: 'top',
       duration: 600,
-      delay: 130,
-      distance: '50px',
+      delay: 160,
+      distance: '20px',
       opacity: 0,
-      scale: 1.2,
+      scale: 1.3,
       easing: 'ease',
       mobile: true
     };

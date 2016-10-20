@@ -1,5 +1,4 @@
 const designTools = {
-
   data: [
     {
       id: 0,

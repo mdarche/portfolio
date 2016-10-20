@@ -11,6 +11,10 @@
   }
 }
 
+.navbar-default {
+  border-color: rgba(231, 231, 231, 0.18);
+}
+
 .navbar-default .navbar-toggle {
   border: none;
 }
@@ -25,14 +29,44 @@
 /* Homepage styles */
 
 #hero {
+  position: relative;
   margin: 0 auto;
   width: 100%;
-  height:800px;
-  background-color: #161652;
+  height:100vh;
+  background: linear-gradient(to bottom, rgba(22,0,89,1) 0%, rgba(22,0,89,1) 23%, rgba(194,33,60,1) 100%);
 }
+
+.parallax {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height:100%;
+}
+
+.hero-layer1 {
+  background-image: url(../src/data/images/hero-layer1.png);
+  height: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+.hero-layer2 {
+  background-image: url(../src/data/images/hero-layer2.png);
+  height: 100%;
+  /*transform: translateZ(0);*/
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer {
+  position: absolute;
+}
+
 
 #about {
   padding: 80px 0px 100px 0px;
+  clear: both;
+  background-color: white;
+  z-index: 1;
 }
 
 #about h3 {

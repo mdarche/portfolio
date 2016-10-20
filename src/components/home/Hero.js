@@ -7,7 +7,10 @@ export default class Hero extends Component {
       <div className="container-fluid">
         <div className="row">
           <div id="hero">
-          
+            <div className="parallax">
+              <div className="parallax-layer hero-layer2" />
+              <div className="hero-layer1" />
+            </div>
           </div>
         </div>
       </div>
