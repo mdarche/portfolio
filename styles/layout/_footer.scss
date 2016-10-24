@@ -1,0 +1,77 @@
+#footer {
+  width: 100%;
+  background-color: $primary-blue;
+  color: #ffffff;
+  padding: 40px 0px 40px 0px;
+  position:relative;
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+
+    &:hover {
+      cursor: pointer;
+      color: $link-color;
+    }
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  li {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 6px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top:50px;
+  font-weight: 300;
+  font-size: 16px;
+
+  a {
+    color: #fff;
+  }
+}
+
+
+.divider-light {
+  width: 70%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.44);
+  margin-bottom: 20px;
+}
+
+.social-links{
+  display: inline-block;
+  margin-left: -20px;
+
+  li {
+    float: left;
+  }
+
+  i {
+    font-size: 24px;
+    margin: 0px 23px;
+  }
+
+}
+
+#footer .email {
+  font-size: 17px;
+  font-weight: 300;
+
+  i {
+    padding: 20px 20px 0px 2px;
+  }
+}

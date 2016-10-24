@@ -1,0 +1,25 @@
+#navigation {
+  padding: 3px 25px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    padding-right: 45px;
+  }
+}
+
+.navbar-default {
+  border-color: rgba(231, 231, 231, 0.18);
+
+  .navbar-toggle {
+    border: none;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+.navbar-fixed-top {
+  background-color: transparent;
+}

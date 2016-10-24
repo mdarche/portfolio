@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import ScrollReveal from '../../../style/ScrollReveal';
+import ScrollReveal from '../../../styles/ScrollReveal';
 
 
 export default class ToolItem extends Component {
@@ -8,7 +8,7 @@ export default class ToolItem extends Component {
     const config = {
       origin: 'top',
       duration: 600,
-      delay: 160,
+      delay: 200,
       distance: '20px',
       opacity: 0,
       scale: 1.3,

@@ -12,7 +12,7 @@ class CategorySection extends Component {
 
   render() {
     return (
-      <div id="portfolio-grid">
+      <div id="category-grid">
         <div className="container">
           <div className="row">
             {this.renderList()}

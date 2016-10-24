@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollReveal from '../../../style/ScrollReveal';
+import ScrollReveal from '../../../styles/ScrollReveal';
 
 export default class CategoryItem extends Component {
   componentDidMount() {

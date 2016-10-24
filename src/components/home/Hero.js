@@ -6,12 +6,29 @@ export default class Hero extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
+
           <div id="hero">
-            <div className="parallax">
-              <div className="parallax-layer hero-layer2" />
-              <div className="hero-layer1" />
+            <div className="stars">
+
+              <div className="col-sm-3" />
+              <div className="col-sm-3 sun" />
+
+
+              <div className="hills-background">
+                <div className="hills-foreground">
+
+                  {/* <div className="col-sm-7" /> */}
+                  <div className="site-title">
+                    <h2>Mike Darche</h2>
+                    <h3>designer + developer</h3>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           </div>
+
         </div>
       </div>
     );

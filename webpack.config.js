@@ -1,3 +1,6 @@
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -16,7 +19,11 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-1']
         }
       },
-      { 
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('css!sass')
+      },
+      {
         test: /\.(png|jpg)$/,
         loader: 'url-loader?limit=8192'
       }
@@ -28,5 +35,10 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('public/style.css', {
+        allChunks: true
+    })
+  ]
 };

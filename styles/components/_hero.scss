@@ -1,0 +1,120 @@
+#hero {
+  // animation: gradientChange 9s ease;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height:100vh;
+  background: linear-gradient(to bottom, #160059 0%, #5b0d4e 30%, #c2213c 100%);
+  // background: linear-gradient(180deg, #160059, #5b0d4e, #c2213c);
+  // background-size: 600% 600%;
+  // background-position:100% 50%;
+
+  .stars {
+    background-image: url(../src/data/images/stars.png);
+    background-position: top;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hills-background {
+    background-image: url(../src/data/images/hills-background.png);
+    background-position: left bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .hills-foreground {
+    background-image: url(../src/data/images/hills-foreground.png);
+    background-position: left bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sun {
+    animation: sunTranslate ease-in-out 3s;
+    margin-top:14%;
+    background-image: url(../src/data/images/hero-sun.png);
+    height:240px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+}
+
+
+
+.site-title {
+  padding-top: 16%;
+  margin-left: 60%;
+  opacity: 1.0;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin: 0px;
+    padding-top:50%;
+  }
+
+  h2 {
+    animation: titleFade ease 4s;
+    font-size: 52px;
+    font-family: montserrat;
+    color: #fff;
+  }
+
+  h3 {
+    animation: subtitleFade ease 4s;
+    font-size: 30px;
+    font-family: Montserrat;
+    margin-top: -4px;
+    opacity: 0.5;
+  }
+}
+
+// Animations
+
+@keyframes gradientChange {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:100% 50%}
+}
+
+
+@keyframes sunTranslate {
+  0% {
+    margin-top: 30%;
+    height: 400px;
+  }
+  100%{
+    margin-top: 14%;
+    height: 240px;
+  }
+}
+
+@keyframes titleFade {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes subtitleFade {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

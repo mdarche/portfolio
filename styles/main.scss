@@ -1,0 +1,19 @@
+@import 'utils/all';
+@import 'components/all';
+@import 'layout/all';
+
+/* TODO: Move Global Styles*/
+
+a {
+  color: #a71c41;
+
+  &:hover {
+    text-decoration: none;
+    color:#b81f3d;
+  }
+}
+
+.react-container {
+  min-height: 100%;
+  position: relative;
+}
