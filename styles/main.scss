@@ -3,6 +3,13 @@
 @import 'layout/all';
 
 /* TODO: Move Global Styles*/
+p, li, a {
+  font-family: Open Sans, sans-serif;
+}
+
+h1, h2 , h3 {
+  font-family: $Montserrat;
+}
 
 a {
   color: #a71c41;

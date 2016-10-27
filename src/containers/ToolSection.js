@@ -14,6 +14,9 @@ class ToolSection extends Component {
     return (
       <div className="container" id="tools-list">
         <div className="row">
+          <div className="tool-heading">
+            <div /><h3>My Toolkit</h3><div />
+          </div>
           {this.renderToolsList()}
         </div>
       </div>

@@ -3,19 +3,19 @@ const designTools = {
     {
       id: 0,
       image: require('./images/photoshop-logo.png'),
-      title: 'Adobe Photoshop',
+      title: 'Adobe Photoshop CC',
       url: 'http://www.adobe.com/products/photoshop.html'
     },
     {
       id: 1,
       image: require('./images/illustrator-logo.png'),
-      title: 'Adobe Illustrator',
+      title: 'Adobe Illustrator CC',
       url: 'http://www.adobe.com/products/illustrator.html'
     },
     {
       id: 2,
       image: require('./images/indesign-logo.png'),
-      title: 'Adobe Indesign',
+      title: 'Adobe Indesign CC',
       url: 'http://www.adobe.com/products/indesign.html'
     },
     {

@@ -1,5 +1,9 @@
 #navigation {
-  padding: 3px 25px;
+  padding: 2px 55px;
+
+  @media screen and (max-width:768px) {
+      padding: 2px 25px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -9,13 +13,25 @@
 }
 
 .navbar-default {
+  transition-duration: 0.5s;
   border-color: rgba(231, 231, 231, 0.18);
+
+  .navbar-nav li a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $Montserrat;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
 
   .navbar-toggle {
     border: none;
 
-    &:hover {
-      background-color: #f8f8f8;
+    &:hover, &:focus {
+      background-color: rgba(255, 255, 255, 0.0);
     }
   }
 }

@@ -1,16 +1,57 @@
 #tools-list {
-  padding: 120px 0px;
+  padding: $padding-desktop;
 
   .tool-image {
     width:100px;
     height: auto;
     display: block;
     margin: auto;
-    cursor: pointer;
-    z-index: 10;
+    z-index: 100;
   }
 
   .tool-container {
-    margin: 50px 0px;
+    padding: 50px 0px;
+    background-color: transparent;
+
+    &:hover {
+      // background-color: rgba(23, 1, 51, 0.15);
+      .tool-title {
+        color: $primary-blue;
+      }
+    }
+
+    .tool-title {
+      transition: ease-in-out 0.3s;
+      text-align: center;
+      color: #fff;
+      padding-top: 16px;
+      font-size: 16px;
+
+      @media screen and (max-height: 768px) {
+        display: none;
+      }
+    }
+
+  }
+
+  .tool-heading {
+    text-align: center;
+    margin-bottom: 20px;
+
+    div {
+      height: 1px;
+      background-color: rgba(23, 1, 51, 0.08);
+      width: 32%;
+      display: inline-block;
+      margin: 0px 30px;
+      vertical-align: super;
+
+      @media screen and (max-width:768px) {
+        display: none;
+      }
+    }
+    h3 {
+      display:inline-block;
+    }
   }
 }

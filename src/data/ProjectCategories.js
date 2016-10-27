@@ -5,7 +5,7 @@ const projectCategories = {
       image: '',
       title: 'Web & UX Design',
       column: 'col-sm-8',
-      description: 'I love clean design and delightful user interactions',
+      description: 'Clean design and delightful interactions',
       delay: 950
     },
     {
@@ -13,7 +13,7 @@ const projectCategories = {
       image: '',
       title: 'Web Development',
       column: 'col-sm-4',
-      description: 'I build websites and web apps',
+      description: 'Web apps and simple websites',
       delay: 600
     },
     {
@@ -21,7 +21,7 @@ const projectCategories = {
       image: '',
       title: 'iOS Development',
       column: 'col-sm-4',
-      description: 'I like to dabble with mobile',
+      description: 'Dabbling with mobile applications',
       delay: 430
     },
     {
@@ -29,7 +29,7 @@ const projectCategories = {
       image: '',
       title: 'Identity Design',
       column: 'col-sm-4',
-      description: 'From sketching to logos and brand guides',
+      description: 'From logos to brand guides',
       delay: 680
     },
     {
@@ -37,7 +37,7 @@ const projectCategories = {
       image: '',
       title: 'Print Design',
       column: 'col-sm-4',
-      description: 'Sometimes I make it happen in CMYK',
+      description: 'Making it happen in CMYK',
       delay: 550
     }
   ]

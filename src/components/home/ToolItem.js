@@ -8,7 +8,7 @@ export default class ToolItem extends Component {
     const config = {
       origin: 'top',
       duration: 600,
-      delay: 200,
+      delay: 300,
       distance: '20px',
       opacity: 0,
       scale: 1.3,
@@ -30,6 +30,7 @@ export default class ToolItem extends Component {
             src={image}
             ref='box1'
           />
+          <div className="tool-title">{title}</div>
         </div>
       </Link>
     );

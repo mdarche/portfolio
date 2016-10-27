@@ -1,10 +1,14 @@
 #hero {
-  // animation: gradientChange 9s ease;
+  animation: gradientChange 5s ease;
   position: relative;
   margin: 0 auto;
   width: 100%;
   height:100vh;
-  background: linear-gradient(to bottom, #160059 0%, #5b0d4e 30%, #c2213c 100%);
+  overflow: hidden;
+  background: linear-gradient(to bottom, #160059 0%, #160059 30%, #5b0d4e 50%, #c2213c 90%, #c2213c 100%);
+  background-position: center bottom;
+  background-size: 130%;
+
   // background: linear-gradient(180deg, #160059, #5b0d4e, #c2213c);
   // background-size: 600% 600%;
   // background-position:100% 50%;
@@ -17,9 +21,12 @@
   }
 
   .hills-background {
+    animation: translateBackground 380s linear infinite;
     background-image: url(../src/data/images/hills-background.png);
     background-position: left bottom;
     background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0%;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -27,17 +34,19 @@
   }
 
   .hills-foreground {
+    animation: translateBackground 190s linear infinite;
     background-image: url(../src/data/images/hills-foreground.png);
     background-position: left bottom;
     background-size: cover;
+    background-repeat: repeat-x;
     width: 100%;
     height: 100%;
   }
 
   .sun {
-    animation: sunTranslate ease-in-out 3s;
+    animation: sunTranslate ease 3s;
     margin-top:14%;
-    background-image: url(../src/data/images/hero-sun.png);
+    background-image: url(../src/data/images/hero-sun1.png);
     height:240px;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -51,13 +60,10 @@
 
 }
 
-
-
 .site-title {
   padding-top: 16%;
   margin-left: 60%;
   opacity: 1.0;
-  color: #fff;
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -66,27 +72,35 @@
   }
 
   h2 {
-    animation: titleFade ease 4s;
     font-size: 52px;
-    font-family: montserrat;
+    font-family: $Montserrat;
     color: #fff;
   }
 
   h3 {
+    color: #fff;
     animation: subtitleFade ease 4s;
     font-size: 30px;
-    font-family: Montserrat;
+    font-family: $Montserrat;
     margin-top: -4px;
     opacity: 0.5;
   }
 }
 
 // Animations
+@keyframes translateBackground {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position:400%;
+  }
+}
+
 
 @keyframes gradientChange {
-    0%{background-position:50% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:100% 50%}
+    0%{background-position: center top}
+    100%{background-position: center bottom}
 }
 
 
@@ -98,23 +112,5 @@
   100%{
     margin-top: 14%;
     height: 240px;
-  }
-}
-
-@keyframes titleFade {
-  0% {
-    opacity: 0.0;
-  }
-  100% {
-    opacity: 1.0;
-  }
-}
-
-@keyframes subtitleFade {
-  0% {
-    opacity: 0.0;
-  }
-  100% {
-    opacity: 0.5;
   }
 }
