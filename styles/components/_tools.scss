@@ -14,7 +14,6 @@
     background-color: transparent;
 
     &:hover {
-      // background-color: rgba(23, 1, 51, 0.15);
       .tool-title {
         color: $primary-blue;
       }
@@ -54,4 +53,22 @@
       display:inline-block;
     }
   }
+
+  .resource-button {
+    font-size: 16px;
+    color: $link-color;
+    text-align: center;
+    margin: 20px auto 0px auto;
+    width: 322px;
+    border: 1px solid $link-color;
+    padding: 20px 0px;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $link-color;
+    }
+  }
+
 }

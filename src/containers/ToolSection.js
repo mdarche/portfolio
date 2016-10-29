@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import ToolItem from '../components/home/ToolItem';
 
 class ToolSection extends Component {
@@ -18,6 +19,11 @@ class ToolSection extends Component {
             <div /><h3>My Toolkit</h3><div />
           </div>
           {this.renderToolsList()}
+        </div>
+        <div className="row">
+          <Link to="/online-resources" >
+            <div className="resource-button">Favorite Resources</div>
+          </Link>
         </div>
       </div>
     );
