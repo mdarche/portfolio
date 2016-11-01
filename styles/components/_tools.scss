@@ -55,7 +55,8 @@
   }
 
   .resource-button {
-    font-size: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
     color: $link-color;
     text-align: center;
     margin: 20px auto 0px auto;
@@ -65,9 +66,16 @@
     cursor: pointer;
     transition: 0.5s ease;
 
+    a {
+      font-family: $Montserrat, sans-serif;
+      transition: 0.5s ease;
+    }
+
     &:hover {
-      color: #fff;
       background-color: $link-color;
+      a {
+        color: #fff;
+      }
     }
   }
 

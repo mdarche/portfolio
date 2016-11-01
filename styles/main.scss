@@ -12,7 +12,7 @@ h1, h2 , h3 {
 }
 
 a {
-  color: #a71c41;
+  color: $link-color;
 
   &:hover {
     text-decoration: none;

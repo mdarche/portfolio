@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import CategoryItem from '../components/home/CategoryItem';
+import CategoryItem from './CategoryItem';
 
 class CategorySection extends Component {
 

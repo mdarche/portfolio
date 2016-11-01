@@ -1,8 +1,8 @@
 import React from 'react';
 import Hero from './home/Hero';
 import AboutSection from './home/AboutSection';
-import CategorySection from '../containers/CategorySection';
-import ToolSection from '../containers/ToolSection';
+import CategorySection from './home/CategorySection';
+import ToolSection from './home/ToolSection';
 
 const Home = () => {
   return (
