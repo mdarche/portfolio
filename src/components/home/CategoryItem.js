@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import ScrollReveal from '../../../styles/ScrollReveal';
 
 export default class CategoryItem extends Component {
@@ -17,18 +18,22 @@ export default class CategoryItem extends Component {
   }
 
   render() {
-    const { description, title, column } = this.props.category;
+    const { description, title, column, image, path } = this.props.category;
 
     return (
-      <div className={column}>
-        <div className="category-item" ref='box1' >
-          <div className="temp-image" />
-          <div className="category-info">
-            <h3>{title}</h3>
-            <p>{description}</p>
+      <Link to={path}>
+        <div className={column}>
+          <div className="category-item" ref='box1' >
+            <div className="image-container">
+              <img className="category-image" src={image} alt={title} />
+            </div>
+            <div className="category-info">
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     );
   }
 }

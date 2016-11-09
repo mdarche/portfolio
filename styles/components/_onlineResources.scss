@@ -1,3 +1,5 @@
+// Grid Styles
+
 .resource-grid {
   padding: 30px 130px;
 
@@ -62,20 +64,64 @@
   }
 }
 
+// Animated Banner Styles
+
 .resource-banner {
   width: 100%;
-  text-align: center;
-  background-color: black;
-  color: white;
-  font-family: $Montserrat, sans-serif;
-  font-size: 42px;
-  height: 500px;
-  padding: 200px 50px 0px 50px;
-  line-height: 40px;
 
-  span {
-    text-transform: uppercase;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.38);
+  background: -webkit-linear-gradient(top, #160033 0%,#160061 100%);
+  background: linear-gradient(to bottom, #160033 0%,#160061 100%);
+  height: 600px;
+
+  .night-stars {
+    background-image: url(../src/data/images/resources/night-stars.png);
+    height:100%;
+    width:100%;
+
+    .text {
+      color: white;
+      text-align: center;
+      font-family: $Montserrat, sans-serif;
+      font-size: 42px;
+      line-height: 40px;
+      padding-top: 250px;
+
+      span {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.38);
+      }
+    }
+
+    .moon {
+      background-image: url(../src/data/images/resources/moon.png);
+      height: 300px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 100px;
+
+      @media screen and (max-width: 768px) {
+        display:none;
+      }
+    }
+
+    .clouds {
+      animation: translateBackground 80s linear infinite;
+      background-image: url(../src/data/images/resources/clouds.png);
+      background-position: left bottom;
+      background-size: cover;
+      height:100%;
+      width: 100%;
+
+    }
   }
+}
+
+//Animations
+
+@keyframes translateBackground {
+  0% { background-position: 0%; }
+  .5% { background-position: 0%; }
+  50% { background-position:100%; }
+  100% { background-position:0%; }
 }

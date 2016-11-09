@@ -9,20 +9,16 @@
   background-position: center bottom;
   background-size: 130%;
 
-  // background: linear-gradient(180deg, #160059, #5b0d4e, #c2213c);
-  // background-size: 600% 600%;
-  // background-position:100% 50%;
-
   .stars {
-    background-image: url(../src/data/images/stars.png);
+    background-image: url(../src/data/images/home/stars.png);
     background-position: top;
     width: 100%;
     height: 100%;
   }
 
   .hills-background {
-    animation: translateBackground 380s linear infinite;
-    background-image: url(../src/data/images/hills-background.png);
+    animation: translateBackground 200s linear infinite;
+    background-image: url(../src/data/images/home/hills-background.png);
     background-position: left bottom;
     background-size: cover;
     background-repeat: repeat-x;
@@ -34,8 +30,8 @@
   }
 
   .hills-foreground {
-    animation: translateBackground 190s linear infinite;
-    background-image: url(../src/data/images/hills-foreground.png);
+    animation: translateBackground 120s linear infinite;
+    background-image: url(../src/data/images/home/hills-foreground.png);
     background-position: left bottom;
     background-size: cover;
     background-repeat: repeat-x;
@@ -46,7 +42,7 @@
   .sun {
     animation: sunTranslate ease 3s;
     margin-top:14%;
-    background-image: url(../src/data/images/hero-sun1.png);
+    background-image: url(../src/data/images/home/hero-sun1.png);
     height:240px;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -89,12 +85,8 @@
 
 // Animations
 @keyframes translateBackground {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position:400%;
-  }
+  0% { background-position: 0%; }
+  100% { background-position:300%; }
 }
 
 

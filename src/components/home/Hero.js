@@ -17,7 +17,6 @@ export default class Hero extends Component {
               <div className="hills-background">
                 <div className="hills-foreground">
 
-                  {/* <div className="col-sm-7" /> */}
                   <div className="site-title">
                     <h2>Mike Darche</h2>
                     <h3>designer + developer</h3>

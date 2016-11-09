@@ -1,3 +1,7 @@
+const webDevImage = require('./images/home/category-webdev.png');
+const identityImage = require('./images/home/category-identity.png');
+const printImage = require('./images/home/category-print.jpg');
+
 const projectCategories = {
   data: [
     {
@@ -5,35 +9,32 @@ const projectCategories = {
       image: '',
       title: 'Web & UX Design',
       column: 'col-sm-8',
-      description: 'Clean design and delightful interactions'
+      description: 'Clean design and delightful interactions',
+      path: '/web-ux-design'
     },
     {
       id: 1,
-      image: '',
-      title: 'Web Development',
+      image: identityImage,
+      title: 'Identity Design',
       column: 'col-sm-4',
-      description: 'Web apps and simple websites'
+      description: 'Logos and branding',
+      path: '/identity-design'
     },
     {
       id: 2,
-      image: '',
-      title: 'iOS Development',
+      image: printImage,
+      title: 'Print Design',
       column: 'col-sm-4',
-      description: 'Dabbling with mobile applications'
+      description: 'Making it happen in CMYK',
+      path: '/print-design'
     },
     {
       id: 3,
-      image: '',
-      title: 'Identity Design',
-      column: 'col-sm-4',
-      description: 'From logos to brand guides'
-    },
-    {
-      id: 4,
-      image: '',
-      title: 'Print Design',
-      column: 'col-sm-4',
-      description: 'Making it happen in CMYK'
+      image: webDevImage,
+      title: 'Web & iOS Development',
+      column: 'col-sm-8',
+      description: 'Web apps, simple sites, and adventures in iOS',
+      path: '/web-ios-development'
     }
   ]
 };

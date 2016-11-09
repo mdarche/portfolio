@@ -5,7 +5,7 @@
   z-index: 10;
   overflow: hidden;
 
-  h3 {
+  #nameBG {
     text-align: center;
     padding-bottom: 20px;
     font-weight: 400;
@@ -16,9 +16,31 @@
   h4 {
     text-align: center;
     margin-top: -110px;
-    margin-bottom: 75px;
+    margin-bottom: 110px;
     font-size: 30px;
   }
+
+  .heading {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #333333;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .divider-dark {
+    width: 95%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.44);
+    margin-bottom: 20px;
+  }
+
+  li {
+    line-height: 25px;
+  }
+
 }
 
 .portrait img {
