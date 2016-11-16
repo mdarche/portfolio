@@ -1,0 +1,44 @@
+// MARK: - Banner and Intro
+.banner {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  div {
+    top: 210px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h2 {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    width: 320px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 3px 2px 22px 0px rgba(0,0,0,0.55);
+  }
+}
+
+.overview {
+  padding: 60px 0px;
+  background-color: #ffffff;
+  z-index: 2;
+  position: relative;
+
+  p {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+// MARK: - Other Work Examples
