@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 
 class FeaturedWork extends Component {
 
+  renderImageList(images) {
+    return images.map((image) => {
+      return (
+        <div className="featured-image">
+          <img src={image} alt="featured" />
+        </div>
+      );
+    });
+  }
+
   render() {
-    const { title, description, tools, classId } = this.props.work;
+    const { title, description, tools, images } = this.props.work;
 
     return (
       <div className="featured-work">
@@ -12,14 +22,15 @@ class FeaturedWork extends Component {
           <h1>{title}</h1>
         </div>
 
-        <div className="scrollView">
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
+        <div id="test" className="scroll-view collapse in">
+          <div className="featured-info">
+            <p>{description}</p>
+            <p>TOOLS:<br />{tools}</p>
+          </div>
+          {this.renderImageList(images)}
         </div>
+
+        <div className="scroll-note">Scroll &#10132;</div>
 
       </div>
     );

@@ -5,6 +5,7 @@ import CategorySection from './CategorySection';
 import ToolSection from './ToolSection';
 
 const Home = () => {
+  
   return (
     <div>
       <Hero />
