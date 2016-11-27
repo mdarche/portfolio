@@ -45,26 +45,34 @@ export default class AboutSection extends Component {
 
             <h3 className="heading">Background</h3>
             <div className="divider-dark" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+            <p>Hi, my name is Mike and I love to build things. I'm a designer and entrepreneur by formal schooling as well as a self-taught programmer.</p>
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It was popularised in the 1960s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+            <p>I graduated from the University of Notre Dame in 2014, where I earned a BBA in Mgmt. Entrepreneurship with a concentration in Graphic Design. Since then, I teamed up with a few friends to co-run a small web and marketing agency called <a href="http://catalyzemarketing.com">Catalyze</a>. By helping our clients grow their brands online over the last few years, I've spent countless hours learning web development and today's best digital marketing practices.</p>
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+            <p>My experiences have transformed my original design interest into a deep appreciation for web and user experience design. In this portfolio, you'll find a few of my favorite recent projects. If you have any questions, feel free to <a href="">contact me.</a></p>
+
+            <p>Thanks for stopping by!</p>
           </div>
 
           <div className="col-md-4">
             <h3 className="heading">Interests</h3>
             <div className="divider-dark" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            <p>You can learn plenty by checking out the work pages below, so here's my chance to give you the authentic run-down. <b>Things that I love:</b></p>
             <ul>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
+              <li>Reading all types of nonfiction</li>
+              <li>Early morning workouts</li>
+              <li>Cooking and anything kitchen related</li>
+              <li>Red wine</li>
+              <li>Gradients and vector artwork (obviously)</li>
+              <li>Pinterest. Seriously.</li>
             </ul>
+            <p><b>Things that I don't love:</b></p>
+            <ul>
+              <li>Pretty regularly sucking at golf</li>
+              <li>Cellphone zombies</li>
+              <li>Driving behind cyclists</li>
+            </ul>
+
           </div>
 
         </div>

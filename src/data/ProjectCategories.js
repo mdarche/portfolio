@@ -1,4 +1,5 @@
-const webDevImage = require('./images/home/category-webdev.png');
+const uxImage = require('./images/desert.png');
+const webDevImage = require('./images/mountain.png');
 const identityImage = require('./images/home/category-identity.png');
 const printImage = require('./images/home/category-print.jpg');
 
@@ -6,7 +7,7 @@ const projectCategories = {
   data: [
     {
       id: 0,
-      image: '',
+      image: uxImage,
       title: 'Web & UX Design',
       column: 'col-sm-8',
       description: 'Clean design and delightful interactions',
