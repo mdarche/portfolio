@@ -20,7 +20,7 @@ class ToolSection extends Component {
           </div>
           {this.renderToolsList()}
         </div>
-        
+
         <div className="row">
             <div className="resource-button">
               <Link to="/online-resources" >
@@ -33,6 +33,10 @@ class ToolSection extends Component {
     );
   }
 }
+
+ToolSection.propTypes = {
+  tools: React.PropTypes.array.isRequired
+};
 
 function mapStateToProps(state) {
   return { tools: state.tools };

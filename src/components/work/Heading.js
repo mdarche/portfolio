@@ -33,4 +33,8 @@ render() {
 }
 }
 
+Heading.propTypes = {
+  heading: React.PropTypes.object.isRequired
+};
+
 export default Heading;

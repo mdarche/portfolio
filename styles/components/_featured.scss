@@ -8,7 +8,7 @@
   transition: ease .5s;
 
   @media screen and (max-width: 768px) {
-    padding: 0px 20px 50px 20px;
+    padding: 0px 20px;
   }
 
   .featured-title {
@@ -23,11 +23,19 @@
   h1 {
     margin-top: 0px;
     float: left;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      float: none;
+      font-size: 25px;
+    }
+
   }
 
   .view-button {
     float: right;
-    padding: 12px 50px;
+    padding: 12px 0px;
+    width: 210px;
     margin-top: -4px;
     border: 2px solid $primary-blue;
     background: none;
@@ -47,7 +55,10 @@
 
     @media screen and (max-width: 768px) {
       float: none;
-      margin-top: 10px;
+      width: 76%;
+      margin-top: 12px;
+      margin-left: 12%;
+      margin-right: 10%;
     }
   }
 
@@ -70,7 +81,7 @@
       display: inline-block;
     }
 
-    .featured-info {
+    .featured-inner {
       vertical-align: top;
       padding-right: 50px;
       width: 380px;
@@ -82,7 +93,7 @@
 
       p:nth-child(2) {
         padding-top: 15px;
-        font-family: Montserrat;
+        font-family: $Montserrat;
         font-size: 13px;
         color: $primary-blue;
       }

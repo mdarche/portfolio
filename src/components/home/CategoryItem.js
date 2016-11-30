@@ -37,3 +37,7 @@ export default class CategoryItem extends Component {
     );
   }
 }
+
+CategoryItem.propTypes = {
+  category: React.PropTypes.object.isRequired
+};

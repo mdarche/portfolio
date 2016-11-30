@@ -4,7 +4,7 @@ import classnames from 'classnames';
 class FeaturedWork extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: false };
+    this.state = { show: this.props.show };
   }
 
   renderImageList(images) {
@@ -33,7 +33,6 @@ class FeaturedWork extends Component {
 
     return (
       <div className="featured-work">
-
         <div className="featured-title">
           <h1>{title}</h1>
           <button
@@ -43,20 +42,22 @@ class FeaturedWork extends Component {
             {buttonText}
           </button>
         </div>
-
         <div className={accordionClass}>
-          <div className="featured-info">
+          <div className="featured-inner">
             <p>{description}</p>
             <p>TOOLS:<br />{tools}</p>
           </div>
           {this.renderImageList(images)}
         </div>
-
         <div className={noteClass}>Scroll &#10132;</div>
-
       </div>
     );
   }
 }
+
+FeaturedWork.propTypes = {
+  show: React.PropTypes.bool.isRequired,
+  work: React.PropTypes.object.isRequired
+};
 
 export default FeaturedWork;

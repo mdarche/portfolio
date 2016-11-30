@@ -36,3 +36,7 @@ export default class ToolItem extends Component {
     );
   }
 }
+
+ToolItem.propTypes = {
+  tool: React.PropTypes.object.isRequired
+};

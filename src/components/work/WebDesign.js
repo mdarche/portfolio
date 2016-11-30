@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Heading from './Heading';
 import FeaturedWork from './FeaturedWork';
-import WorkGrid from './WorkGrid';
 
 class WebDesign extends Component {
   componentDidMount() {
@@ -16,9 +15,9 @@ class WebDesign extends Component {
     return (
       <div>
       <Heading heading={heading} />
-      <FeaturedWork work={featured} />
-      <FeaturedWork work={featured} />
-      <FeaturedWork work={featured} />
+      <FeaturedWork work={featured} show={true} />
+      <FeaturedWork work={featured} show={false} />
+      <FeaturedWork work={featured} show={false} />
       </div>
     );
   }

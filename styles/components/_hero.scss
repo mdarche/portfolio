@@ -1,5 +1,5 @@
 #hero {
-  animation: gradientChange 5s ease;
+  animation: gradientChange 8s ease;
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -40,7 +40,7 @@
   }
 
   .sun {
-    animation: sunTranslate ease 3s;
+    animation: sunTranslate ease 7.5s;
     margin-top:14%;
     background-image: url(../src/data/images/home/hero-sun1.png);
     height:240px;
@@ -98,8 +98,14 @@
 
 @keyframes sunTranslate {
   0% {
-    margin-top: 30%;
+    margin-top: 35%;
     height: 400px;
+    opacity: 0;
+  }
+  30% {
+    margin-top: 35%;
+    height: 400px;
+    opacity: 1;
   }
   100%{
     margin-top: 14%;

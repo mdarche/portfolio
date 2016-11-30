@@ -11,7 +11,7 @@ $(document).ready(function(){
     }
 
     if ($(document).scrollTop() > 280) {
-      $(".overview h4").css("opacity", "1");
+      $('.overview h4').css('opacity', '1');
     } else {
       $(".overview h4").css("opacity", "0");
     }

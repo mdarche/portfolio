@@ -23,6 +23,10 @@ class CategorySection extends Component {
   }
 }
 
+CategorySection.propTypes = {
+  categories: React.PropTypes.array.isRequired
+};
+
 function mapStateToProps(state) {
   return { categories: state.categories };
 }
