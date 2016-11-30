@@ -64,7 +64,7 @@ export default class AboutSection extends Component {
               <li>Cooking and anything kitchen related</li>
               <li>Red wine</li>
               <li>Gradients and vector artwork (obviously)</li>
-              <li>Pinterest. Seriously.</li>
+              <li>Pinterest.</li>
             </ul>
             <p><b>Things that I don't love:</b></p>
             <ul>

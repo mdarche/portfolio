@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
 class FeaturedWork extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: false };
+  }
 
   renderImageList(images) {
     return images.map((image) => {
@@ -12,17 +17,34 @@ class FeaturedWork extends Component {
     });
   }
 
+  click() {
+      if (this.state.show) {
+        this.setState({ show: false });
+      } else {
+        this.setState({ show: true });
+      }
+  }
+
   render() {
     const { title, description, tools, images } = this.props.work;
+    const buttonText = !this.state.show ? 'View Project' : 'Hide Project';
+    const accordionClass = classnames('scroll-view', { show: this.state.show });
+    const noteClass = classnames('scroll-note', { show: this.state.show });
 
     return (
       <div className="featured-work">
 
         <div className="featured-title">
           <h1>{title}</h1>
+          <button
+            className="view-button"
+            onClick={this.click.bind(this)}
+          >
+            {buttonText}
+          </button>
         </div>
 
-        <div id="test" className="scroll-view collapse in">
+        <div className={accordionClass}>
           <div className="featured-info">
             <p>{description}</p>
             <p>TOOLS:<br />{tools}</p>
@@ -30,7 +52,7 @@ class FeaturedWork extends Component {
           {this.renderImageList(images)}
         </div>
 
-        <div className="scroll-note">Scroll &#10132;</div>
+        <div className={noteClass}>Scroll &#10132;</div>
 
       </div>
     );

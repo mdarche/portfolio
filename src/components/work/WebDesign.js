@@ -12,14 +12,13 @@ class WebDesign extends Component {
   render() {
     const heading = (this.props.webDesign[0]);
     const featured = (this.props.webDesign[1]);
-    const project1 = (this.props.webDesign[2]);
 
     return (
       <div>
       <Heading heading={heading} />
       <FeaturedWork work={featured} />
-      <WorkGrid work={project1} />
-      <WorkGrid work={project1} />
+      <FeaturedWork work={featured} />
+      <FeaturedWork work={featured} />
       </div>
     );
   }

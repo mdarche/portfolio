@@ -9,5 +9,11 @@ $(document).ready(function(){
       $(".navbar-fixed-top").css("border-bottom", "1px solid rgba(231, 231, 231, 0.18)");
       $ (".navbar-nav li a").css("color", "#fff");
     }
+
+    if ($(document).scrollTop() > 280) {
+      $(".overview h4").css("opacity", "1");
+    } else {
+      $(".overview h4").css("opacity", "0");
+    }
   });
 });

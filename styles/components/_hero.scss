@@ -17,7 +17,7 @@
   }
 
   .hills-background {
-    animation: translateBackground 200s linear infinite;
+    animation: translateBackground 180s linear infinite;
     background-image: url(../src/data/images/home/hills-background.png);
     background-position: left bottom;
     background-size: cover;
@@ -30,7 +30,7 @@
   }
 
   .hills-foreground {
-    animation: translateBackground 120s linear infinite;
+    animation: translateBackground 70s linear infinite;
     background-image: url(../src/data/images/home/hills-foreground.png);
     background-position: left bottom;
     background-size: cover;
