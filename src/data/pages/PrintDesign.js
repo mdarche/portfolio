@@ -1,9 +1,9 @@
-const webDevImage = require('./images/desert.png');
+const webDevImage = require('../images/desert.png');
 
-const uxDesign = {
+const printDesign = {
   data: [
     {
-      title: 'Web & UX Design',
+      title: 'Print Design',
       category: 'Design',
       banner: webDevImage,
       p1: 'As a long-time fan of Photoshop and print design, I loved journeying into Web six years ago. Modern web browsers and touch screens bring a whole new element to user centered design: interactivity and user experience. There is nothing more exciting than a clean design that offers interesting user interactions and feedback.',
@@ -34,4 +34,4 @@ const uxDesign = {
   ]
 };
 
-export { uxDesign };
+export { printDesign };

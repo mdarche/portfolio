@@ -21,7 +21,7 @@ export default class CategoryItem extends Component {
     const { description, title, column, image, path } = this.props.category;
 
     return (
-      <Link to={path}>
+      <Link to={"work/" + path}>
         <div className={column}>
           <div className="category-item" ref='box1' >
             <div className="image-container">

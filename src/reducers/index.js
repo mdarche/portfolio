@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import categories from './PortfolioReducer';
 import tools from './ToolsReducer';
-import webDesign from './DesignReducer';
+import WorkReducer from './WorkReducer';
 import {
   designTools,
   designThinkingTools,
@@ -9,13 +9,13 @@ import {
   projectTools } from './ResourcesReducer';
 
 const rootReducer = combineReducers({
+  work: WorkReducer,
   categories,
   tools,
-  webDesign,
   designTools,
   designThinkingTools,
   devTools,
-  projectTools
+  projectTools,
 });
 
 export default rootReducer;

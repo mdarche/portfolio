@@ -57,7 +57,7 @@ class FeaturedWork extends Component {
 
 FeaturedWork.propTypes = {
   show: React.PropTypes.bool.isRequired,
-  work: React.PropTypes.object.isRequired
+  work: React.PropTypes.object
 };
 
 export default FeaturedWork;

@@ -1,19 +1,24 @@
 #navigation {
   padding: 2px 55px;
-
   @media screen and (max-width:768px) {
       padding: 2px 25px;
   }
-
   i {
     font-size: 18px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar-right {
     padding-right: 45px;
   }
+}
+
+.navbar-nav li a.toggle {
+    color: $primary-blue !important;
+    &:hover {
+      color: $link-color !important;
+    }
 }
 
 .navbar-default {
@@ -25,7 +30,7 @@
     font-size: 14px;
     text-transform: uppercase;
     font-family: $Montserrat;
-
+    transition: ease .2s;
     &:hover {
       color: $link-color;
     }
@@ -33,7 +38,6 @@
 
   .navbar-toggle {
     border: none;
-
     &:hover, &:focus {
       background-color: rgba(255, 255, 255, 0.0);
     }
@@ -42,4 +46,10 @@
 
 .navbar-fixed-top {
   background-color: transparent;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+.navbar-fixed-top.show {
+  border-bottom: 1px solid #eaeaea;
+  background-color: rgba(255, 255, 255, 0.97);
 }

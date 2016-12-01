@@ -34,7 +34,7 @@ render() {
 }
 
 Heading.propTypes = {
-  heading: React.PropTypes.object.isRequired
+  heading: React.PropTypes.object
 };
 
 export default Heading;
