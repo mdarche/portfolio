@@ -11,10 +11,12 @@ const Footer = () => {
             <h3>Menu</h3>
             <div className="divider-light" />
             <ul>
-              <li><Link>About Me</Link></li>
-              <li><Link>Recent Projects</Link></li>
-              <li><Link>Blog</Link></li>
-              <li><Link>My Tools</Link></li>
+              <li><a href="/#about">About Me</a></li>
+              <li><Link to={'work/web-ux-design'}>Web & UX Design</Link></li>
+              <li><Link to={'work/identity-design'}>Identity Design</Link></li>
+              <li><Link to={'work/print-design'}>Print Design</Link></li>
+              <li><Link to={'work/web-ios-development'}>Web & iOS Dev</Link></li>
+              <li><Link to={'online-resources'}>My Resources</Link></li>
             </ul>
           </div>
 
@@ -22,15 +24,15 @@ const Footer = () => {
             <h3>Connect</h3>
             <div className="divider-light" />
             <ul className="social-links">
-              <li><a href="http://linkedin.com/"><i className="fa fa-linkedin" /></a></li>
-              <li><a href="http://pinterest.com/"><i className="fa fa-pinterest" /></a></li>
-              <li><a href="http://github.com/"><i className="fa fa-github" /></a></li>
-              <li><a href="http://behance.com/"><i className="fa fa-behance" /></a></li>
-              <li><a href="http://plus.google.com/"><i className="fa fa-google-plus" /></a></li>
-              <li><a href="http://facebook.com/"><i className="fa fa-facebook-square" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/mdarche"><i className="fa fa-linkedin" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://www.pinterest.com/mdarshay/"><i className="fa fa-pinterest" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/mdarche"><i className="fa fa-github" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://www.behance.net/MikeDarche"><i className="fa fa-behance" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://plus.google.com/u/0/114770771384800712851"><i className="fa fa-google-plus" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/mdarche"><i className="fa fa-facebook-square" /></a></li>
             </ul>
             <p className="email">
-              <a href="mailto:webmaster@example.com">
+              <a href="mailto:michael@catalyzemarketing.com">
                 <i className="fa fa-envelope" />
                 Email Me
               </a>

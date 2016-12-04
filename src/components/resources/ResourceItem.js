@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ScrollReveal from '../../../styles/ScrollReveal';
+import React, { Component, PropTypes } from 'react';
+import ScrollReveal from '../../../scripts/ScrollReveal';
 
 export default class ResourceItem extends Component {
   componentDidMount() {
@@ -38,3 +38,7 @@ export default class ResourceItem extends Component {
     );
   }
 }
+
+ResourceItem.propTypes = {
+  info: PropTypes.object.isRequired
+};

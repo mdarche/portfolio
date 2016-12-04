@@ -1,5 +1,5 @@
 #hero {
-  animation: gradientChange 8s ease;
+  animation: gradientChange 6s ease;
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -30,7 +30,7 @@
   }
 
   .hills-foreground {
-    animation: translateBackground 70s linear infinite;
+    animation: translateBackground 60s linear infinite;
     background-image: url(../src/data/images/home/hills-foreground.png);
     background-position: left bottom;
     background-size: cover;
@@ -40,8 +40,8 @@
   }
 
   .sun {
-    animation: sunTranslate ease 7.5s;
-    margin-top:14%;
+    animation: sunTranslate ease 5s;
+    margin-top:13.5%;
     background-image: url(../src/data/images/home/hero-sun1.png);
     height:240px;
     background-position-x: center;
@@ -108,7 +108,7 @@
     opacity: 1;
   }
   100%{
-    margin-top: 14%;
+    margin-top: 13.5%;
     height: 240px;
   }
 }

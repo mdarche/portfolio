@@ -14,22 +14,24 @@ class WorkOverview extends Component {
     document.title = 'Mike Darche | ' + this.props.work[0].title;
   }
 
+  renderPortfolioItems() {
+    return this.props.work.map((prop, index) => {
+      if (index === 1) {
+        return <FeaturedWork work={prop} show={true} key={prop.id} />;
+      }
+      return <FeaturedWork work={prop} show={false} key={prop.id} />;
+    }).slice(1);
+  }
+
   render() {
     const { work } = this.props;
-
-    if (!work) {
-      return <div>Loading...</div>;
-    }
-
-    const heading = (work[0]);
-    const featured = (work[1]);
+    if (!work) { return <div>Loading...</div>; }
+    const heading = work[0];
 
     return (
       <div>
       <Heading heading={heading} />
-      <FeaturedWork work={featured} show={true} />
-      <FeaturedWork work={featured} show={false} />
-      <FeaturedWork work={featured} show={false} />
+      {this.renderPortfolioItems()}
       </div>
     );
   }

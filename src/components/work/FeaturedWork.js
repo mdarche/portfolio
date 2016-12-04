@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
 
 class FeaturedWork extends Component {
@@ -7,22 +7,22 @@ class FeaturedWork extends Component {
     this.state = { show: this.props.show };
   }
 
-  renderImageList(images) {
-    return images.map((image) => {
-      return (
-        <div className="featured-image">
-          <img src={image} alt="featured" />
-        </div>
-      );
-    });
-  }
-
   click() {
       if (this.state.show) {
         this.setState({ show: false });
       } else {
         this.setState({ show: true });
       }
+  }
+
+  renderImageList(images) {
+    return images.map((image) => {
+      return (
+        <div className="featured-image" key={image.toString()}>
+          <img src={image} alt="featured" />
+        </div>
+      );
+    });
   }
 
   render() {
@@ -56,8 +56,13 @@ class FeaturedWork extends Component {
 }
 
 FeaturedWork.propTypes = {
-  show: React.PropTypes.bool.isRequired,
-  work: React.PropTypes.object
+  show: PropTypes.bool.isRequired,
+  work: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    tools: PropTypes.string,
+    images: PropTypes.arrayOf(PropTypes.string)
+  })
 };
 
 export default FeaturedWork;

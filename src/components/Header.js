@@ -19,7 +19,9 @@ export default class Header extends Component {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="/">Custom Mike Logo</a>
+            <a className="navbar-brand" href="/">
+              <div className="logo" />
+            </a>
           </div>
 
           <div className="collapse navbar-collapse" id="myNavbar">

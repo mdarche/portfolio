@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
-import ScrollReveal from '../../../styles/ScrollReveal';
+import ScrollReveal from '../../../scripts/ScrollReveal';
 
 export default class CategoryItem extends Component {
   componentDidMount() {
@@ -21,7 +21,7 @@ export default class CategoryItem extends Component {
     const { description, title, column, image, path } = this.props.category;
 
     return (
-      <Link to={"work/" + path}>
+      <Link to={'work/' + path}>
         <div className={column}>
           <div className="category-item" ref='box1' >
             <div className="image-container">
@@ -39,5 +39,5 @@ export default class CategoryItem extends Component {
 }
 
 CategoryItem.propTypes = {
-  category: React.PropTypes.object.isRequired
+  category: PropTypes.object.isRequired
 };

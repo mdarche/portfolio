@@ -3,6 +3,7 @@
   background-color: $primary-blue;
   color: #ffffff;
   padding: 40px 0px 40px 0px;
+  z-index: 2;
   position:relative;
 
   @media screen and (max-width: 768px) {

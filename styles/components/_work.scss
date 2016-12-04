@@ -30,7 +30,7 @@
 }
 
 .overview {
-  padding: 60px 0px;
+  padding: 70px 0px 110px 0px;
   background-color: #ffffff;
   z-index: 2;
   position: relative;
@@ -40,7 +40,7 @@
     padding-bottom: 20px;
     font-weight: 400;
     font-size: 110px;
-    color: #f9f8f8;
+    color: #f6f5f7;
     text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
@@ -54,7 +54,7 @@
     margin-bottom: 90px;
     font-size: 30px;
     opacity: 0;
-    transition: ease .7s;
+    transition: ease-in-out .5s;
 
     @media screen and (max-width: 768px) {
       margin-top: -94px;

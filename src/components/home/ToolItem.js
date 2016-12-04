@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
-import ScrollReveal from '../../../styles/ScrollReveal';
+import ScrollReveal from '../../../scripts/ScrollReveal';
 
 
 export default class ToolItem extends Component {
@@ -38,5 +38,5 @@ export default class ToolItem extends Component {
 }
 
 ToolItem.propTypes = {
-  tool: React.PropTypes.object.isRequired
+  tool: PropTypes.object.isRequired
 };
