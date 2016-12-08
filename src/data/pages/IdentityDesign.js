@@ -6,14 +6,15 @@ const identityDesign = {
       title: 'Identity Design',
       category: 'Design',
       banner: webDevImage,
-      p1: 'As a long-time fan of Photoshop and print design, I loved journeying into Web six years ago. Modern web browsers and touch screens bring a whole new element to user centered design: interactivity and user experience. There is nothing more exciting than a clean design that offers interesting user interactions and feedback.',
-      p2: 'For client work I mostly design eCommerce stores and informational websites, but in my spare time I love to ideate web and mobile applications. As we enter the age of 3D visual design with AR/VR, I hope to adapt my ideas to these new media. Check out a selection of my work below:'
+      p1: 'Jeff Bezos and dozens of other business leaders often says that \'Your brand is what people say about you behind your back\'. This statement certainly nails the essence of branding and its underlying strategy. While there are many different components involved with branding, I am most drawn to visual identity.',
+      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always interested me in the world of design. I think it\'s incredible that garbage products can be saved by a powerful brand, and that amazing products might never be recognized if they lack a strong visual identity. Since graduating school, I\'ve had the chance to develop or co-develop brand identities on a few different projects.'
     },
     {
-      title: 'Project Name',
+      title: 'Logo Design',
       id: 1,
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam',
-      tools: 'Photoshop, Illustrator, Framer Studio',
+      p1: 'Over the years I have developed numerous logos and logo marks for new brands (some are also personal projects) and existing companies. Here are a collection of my favorite designs.',
+      p2: '',
+      tools: 'Pencils & Paper, Illustrator',
       images: [
         webDevImage,
         webDevImage,
@@ -22,10 +23,11 @@ const identityDesign = {
       ]
     },
     {
-      title: 'Project Name',
+      title: 'Catalyze',
       id: 2,
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam',
-      tools: 'Photoshop, Illustrator, Framer Studio',
+      p1: 'At Catalyze, having the flexibility to design our brand has been an awesome learning experience and a great way to test ideas. Every opportunity to put something in front of a customer or a prospect is a chance to show our message and highlight our attention to detail.',
+      p2: 'In response to our growth over the last few years, we have tuned up our logo and type specs, streamlined our internal design templates, and updated our mission over a variety of media. These are a few of the documents I have had the pleasure to prepare for us.',
+      tools: 'Photoshop, Illustrator, InDesign',
       featuredImage: webDevImage,
       images: [
         webDevImage,

@@ -6,14 +6,15 @@ const printDesign = {
       title: 'Print Design',
       category: 'Design',
       banner: webDevImage,
-      p1: 'As a long-time fan of Photoshop and print design, I loved journeying into Web six years ago. Modern web browsers and touch screens bring a whole new element to user centered design: interactivity and user experience. There is nothing more exciting than a clean design that offers interesting user interactions and feedback.',
-      p2: 'For client work I mostly design eCommerce stores and informational websites, but in my spare time I love to ideate web and mobile applications. As we enter the age of 3D visual design with AR/VR, I hope to adapt my ideas to these new media. Check out a selection of my work below:'
+      p1: 'Any young designer knows that when you use Photoshop in high school or college, you become the go-to friend for creating posters, T-Shirts, and signs. These types of print tasks played a big role in developing my interest for design.',
+      p2: 'I haven\'t done a ton of print work lately, but there\'s no denying the  overlap between print and digital design principles. Whenever I get the chance, I enjoy working on projects that will make it from the printer into the hands of an end viewer.'
     },
     {
-      title: 'Project Name',
+      title: 'Cavagna North America',
       id: 1,
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam',
-      tools: 'Photoshop, Illustrator, Framer Studio',
+      p1: 'Cavagna NA is a manufacturer and distributor of propane gas equipment. It\'s an older business that relies heavily on personal relationships and phsyical media to drive sales.',
+      p2: 'I have designed packaging, customer sell sheets, internal reports, slideshow presentations, and marketing materials for Cavagna since 2014. You can see some samples of my work here.',
+      tools: 'InDesign, Illustrator, Photoshop',
       images: [
         webDevImage,
         webDevImage,
@@ -22,10 +23,11 @@ const printDesign = {
       ]
     },
     {
-      title: 'Project Name',
+      title: 'Assorted Projects',
       id: 2,
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam',
-      tools: 'Photoshop, Illustrator, Framer Studio',
+      p1: 'Because my recent work has mostly been digital, I\'m going to cheat here and lump several print samples under one umbrella.',
+      p2: '',
+      tools: 'InDesign, Illustrator, Photoshop',
       featuredImage: webDevImage,
       images: [
         webDevImage,
