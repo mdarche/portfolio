@@ -1,4 +1,4 @@
-const webDevImage = require('../images/desert.png');
+const webDevImage = require('../images/ocean.png');
 
 const identityDesign = {
   data: [
@@ -6,8 +6,8 @@ const identityDesign = {
       title: 'Identity Design',
       category: 'Design',
       banner: webDevImage,
-      p1: 'Jeff Bezos and dozens of other business leaders often says that \'Your brand is what people say about you behind your back\'. This statement certainly nails the essence of branding and its underlying strategy. While there are many different components involved with branding, I am most drawn to visual identity.',
-      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always interested me in the world of design. I think it\'s incredible that garbage products can be saved by a powerful brand, and that amazing products might never be recognized if they lack a strong visual identity. Since graduating school, I\'ve had the chance to develop or co-develop brand identities on a few different projects.'
+      p1: 'Jeff Bezos and dozens of other business leaders often say that \'Your brand is what people say about you behind your back\'. This statement certainly nails the essence of branding and its underlying strategy. While there are many different components involved with branding, I am most drawn to visual identity.',
+      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always interested me in the world of design. I think it\'s incredible that terrible products can be saved by a powerful brand, and that amazing products might never be recognized if they lack a strong visual identity. Since graduating school, I\'ve had the chance to develop or co-develop brand identities on a few different projects.'
     },
     {
       title: 'Logo Design',

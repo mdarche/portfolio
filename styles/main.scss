@@ -2,9 +2,14 @@
 @import 'components/all';
 @import 'layout/all';
 
-/* TODO: Move Global Styles*/
+// Global Styles
+
 p, li, a {
-  font-family: Open Sans, sans-serif;
+  font-family: $Lora, sans-serif;
+}
+
+li {
+  line-height: 25px;
 }
 
 h1, h2 , h3 {
@@ -16,7 +21,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    color:#b81f3d;
+    color: $link-hover-blue;
   }
 }
 

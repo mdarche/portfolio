@@ -7,6 +7,10 @@ const unsplashLogo = require('./images/resources/unsplash.png');
 const pixedenLogo = require('./images/resources/pixeden.png');
 const freepikLogo = require('./images/resources/freepik.png');
 const flaticonLogo = require('./images/resources/flaticon.png');
+const adweekLogo = require('./images/resources/adweek.png');
+const codesignLogo = require('./images/resources/codesign.png');
+const behanceLogo = require('./images/resources/behance.png');
+const dribbbleLogo = require('./images/resources/dribbble.png');
 
 const ideoLogo = require('./images/resources/ideo.png');
 const mediumLogo = require('./images/resources/medium.png');
@@ -18,11 +22,18 @@ const codeschoolLogo = require('./images/resources/codeschool.png');
 const stackoverflowLogo = require('./images/resources/stackoverflow.png');
 const githubLogo = require('./images/resources/github.png');
 const devtoolsLogo = require('./images/resources/devtools.png');
+const codecademyLogo = require('./images/resources/codecademy.png');
+const apiaryLogo = require('./images/resources/apiary.png');
+const youtubeLogo = require('./images/resources/youtube.png');
+const redditLogo = require('./images/resources/reddit.png');
+const bwLogo = require('./images/resources/builtwith.png');
 
 const trelloLogo = require('./images/resources/trello.png');
 const togglLogo = require('./images/resources/toggl.png');
 const slackLogo = require('./images/resources/slack.png');
 const evernoteLogo = require('./images/resources/evernote.png');
+const asanaLogo = require('./images/resources/asana.png');
+const driveLogo = require('./images/resources/drive.png');
 
 
 const designResources = {
@@ -61,6 +72,22 @@ const designResources = {
     },
     {
       id: 4,
+      title: 'FastCo Design',
+      image: codesignLogo,
+      type: 'Learning',
+      description: 'A great news site for web and UX designers.',
+      url: 'https://www.fastcodesign.com/'
+    },
+    {
+      id: 5,
+      title: 'Adweek',
+      image: adweekLogo,
+      type: 'Learning',
+      description: 'Learn about the successful design implemented in the latest popular ad campaigns.',
+      url: 'http://www.adweek.com/'
+    },
+    {
+      id: 6,
       title: 'Unsplash',
       image: unsplashLogo,
       type: 'Tool',
@@ -68,7 +95,7 @@ const designResources = {
       url: 'https://unsplash.com/'
     },
     {
-      id: 5,
+      id: 7,
       title: 'Freepik',
       image: freepikLogo,
       type: 'Tool',
@@ -76,7 +103,7 @@ const designResources = {
       url: 'http://www.freepik.com/'
     },
     {
-      id: 6,
+      id: 8,
       title: 'Flaticon',
       image: flaticonLogo,
       type: 'Tool',
@@ -84,13 +111,29 @@ const designResources = {
       url: 'http://www.flaticon.com/'
     },
     {
-      id: 7,
+      id: 9,
       title: 'Pixeden',
       image: pixedenLogo,
       type: 'Tool',
       description: 'Free Photoshop templates for staging your work or pitching clients your vision.',
       url: 'http://www.pixeden.com/'
     },
+    {
+      id: 10,
+      title: 'Behance',
+      image: behanceLogo,
+      type: 'Inspiration',
+      description: 'Unlike Pinterest pins, you can see and read about full projects from inception to finish.',
+      url: 'http://www.behance.net/'
+    },
+    {
+      id: 11,
+      title: 'Dribbble',
+      image: dribbbleLogo,
+      type: 'Inspiration',
+      description: 'The best showcase for interaction design in the form of snapshots. I\'ll get on here soon...',
+      url: 'https://dribbble.com/'
+    }
   ]
 };
 
@@ -151,6 +194,14 @@ const developmentResources = {
     },
     {
       id: 2,
+      title: 'Codecademy',
+      image: codecademyLogo,
+      type: 'Learning',
+      description: 'In-browser code editing for learning web technologies!',
+      url: 'https://www.codecademy.com/'
+    },
+    {
+      id: 3,
       title: 'Stack Overflow',
       image: stackoverflowLogo,
       type: 'Learning',
@@ -158,7 +209,7 @@ const developmentResources = {
       url: 'http://stackoverflow.com/'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Github',
       image: githubLogo,
       type: 'Tool',
@@ -166,12 +217,44 @@ const developmentResources = {
       url: 'https://github.com/'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Chrome Dev Tools',
       image: devtoolsLogo,
       type: 'Tool',
-      description: 'Can you even be a web developer in 2016 without using Dev Tools for debugging or live-styling?',
+      description: 'I love Dev Tools for debugging JS, profiling performance, and live-styling while I work on web pages.',
       url: 'https://developer.chrome.com/devtools'
+    },
+    {
+      id: 6,
+      title: 'Apiary',
+      image: apiaryLogo,
+      type: 'Tool',
+      description: 'This nifty tool lets you build mock APIs that send static json to your front-end applications. Excellent for testing.',
+      url: 'https://apiary.io/'
+    },
+    {
+      id: 7,
+      title: 'Youtube',
+      image: youtubeLogo,
+      type: 'Tool',
+      description: 'Some of the best tutorials and language overviews are publicly available on Youtube.',
+      url: 'https://www.youtube.com/'
+    },
+    {
+      id: 8,
+      title: 'Reddit',
+      image: redditLogo,
+      type: 'Learning',
+      description: 'Subreddits for programming languages are a great place to stay on top of news and common mistakes.',
+      url: 'https://www.reddit.com/'
+    },
+    {
+      id: 9,
+      title: 'BuiltWith',
+      image: bwLogo,
+      type: 'Tool',
+      description: 'Top level tech profiling for any website on the Internet. Learn all of the services a site is using.',
+      url: 'https://builtwith.com/'
     }
   ]
 };
@@ -209,6 +292,22 @@ const projectResources = {
       type: 'Tool',
       description: 'Evernote is runner up to an actual moleskin notebook and ballpoint pen.',
       url: 'https://evernote.com/'
+    },
+    {
+      id: 4,
+      title: 'Google Drive',
+      image: driveLogo,
+      type: 'Tool',
+      description: 'Cloud storage that comes bundled with your Gmail account. Access your files from anywhere.',
+      url: 'https://www.google.com/drive/'
+    },
+    {
+      id: 5,
+      title: 'Asana',
+      image: asanaLogo,
+      type: 'Tool',
+      description: 'Really powerful team management dashboard for task and project management.',
+      url: 'https://asana.com/'
     }
   ]
 };

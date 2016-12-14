@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import ScrollReveal from '../../../scripts/ScrollReveal';
+import ScrollReveal from '../../util/ScrollReveal';
 
 export default class ResourceItem extends Component {
   componentDidMount() {

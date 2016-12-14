@@ -3,9 +3,11 @@ $(document).ready(function(){
     if ($(document).scrollTop() > 100) {
       $(".navbar-fixed-top").addClass("show");
       $(".navbar-nav li a").addClass("toggle");
+      $(".navbar-default .logo").addClass("toggle");
     } else {
       $(".navbar-fixed-top").removeClass("show");
       $(".navbar-nav li a").removeClass("toggle");
+      $(".navbar-default .logo").removeClass("toggle");
     }
 
     if ($(document).scrollTop() > 280) {

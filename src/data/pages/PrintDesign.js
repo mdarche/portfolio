@@ -1,4 +1,4 @@
-const webDevImage = require('../images/desert.png');
+const webDevImage = require('../images/snow.png');
 
 const printDesign = {
   data: [

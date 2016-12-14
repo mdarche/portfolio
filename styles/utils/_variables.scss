@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
 // Colors
+$white: #ffffff;
+$black: #000000;
+$light-gray: #f6f5f7;
 $primary-blue: #170133;
 $link-color: #ca063e;
+$link-hover-blue: #39e8db;
+
+$border-gray: 1px solid #ececec;
 
 // Fonts
 $Montserrat: 'Montserrat', sans-serif;
+$Lora: 'Lora', sans-serif;
+$OpenSans: 'Open Sans', Helvetica, sans-serif;
 
 // Section Spacing
-$padding-desktop: 80px 0px 100px 0px;
+$padding-desktop: 110px 0px 150px 0px;
 $padding-mobile: 50px 0px 70px 0px;

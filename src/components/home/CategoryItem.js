@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
-import ScrollReveal from '../../../scripts/ScrollReveal';
+import ScrollReveal from '../../util/ScrollReveal';
 
 export default class CategoryItem extends Component {
   componentDidMount() {

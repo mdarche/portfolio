@@ -2,35 +2,27 @@
   padding: $padding-desktop;
 
   .tool-image {
-    width:100px;
-    height: auto;
     display: block;
-    margin: auto;
-    z-index: 100;
+    z-index: 10;
+    @include height-width(auto, 100px);
+    @include push-auto;
   }
 
   .tool-container {
     padding: 50px 0px;
     background-color: transparent;
-
     &:hover {
-      .tool-title {
-        color: $primary-blue;
-      }
+      .tool-title { color: $primary-blue; }
     }
 
     .tool-title {
-      transition: ease-in-out 0.3s;
       text-align: center;
-      color: #fff;
+      color: $white;
       padding-top: 16px;
       font-size: 16px;
-
-      @media screen and (max-height: 768px) {
-        display: none;
-      }
+      @include transition(ease-in-out 0.3s);
+      @include bp-small { display: none; }
     }
-
   }
 
   .tool-heading {
@@ -38,45 +30,18 @@
     margin-bottom: 20px;
 
     div {
-      height: 1px;
-      background-color: rgba(23, 1, 51, 0.08);
-      width: 32%;
       display: inline-block;
-      margin: 0px 30px;
       vertical-align: super;
+      @include divider-line(32%, rgba(23, 1, 51, 0.08), 0px 30px)
+      @include bp-small { display: none; }
+    }
 
-      @media screen and (max-width:768px) {
-        display: none;
-      }
-    }
-    h3 {
-      display:inline-block;
-    }
+    h3 { display:inline-block; }
   }
 
   .resource-button {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $link-color;
-    text-align: center;
-    margin: 20px auto 0px auto;
-    width: 322px;
-    border: 2px solid $link-color;
-    padding: 20px 0px;
-    cursor: pointer;
-    transition: 0.5s ease;
-
-    a {
-      font-family: $Montserrat, sans-serif;
-      transition: 0.5s ease;
-    }
-
-    &:hover {
-      background-color: $link-color;
-      a {
-        color: #fff;
-      }
-    }
+    @include button($link-color, 322px, uppercase, 14px);
+    margin-top: 60px;
   }
 
 }

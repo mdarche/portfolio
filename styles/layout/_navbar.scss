@@ -1,24 +1,17 @@
 #navigation {
   padding: 2px 55px;
-  @media screen and (max-width:768px) {
+  i { font-size: 18px; }
+  @include bp-small {
       padding: 2px 25px;
-  }
-  i {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navbar-right {
-    padding-right: 45px;
+      .navbar-right {
+        padding-right: 45px;
+      }
   }
 }
 
 .navbar-nav li a.toggle {
-    color: $primary-blue !important;
-    &:hover {
-      color: $link-color !important;
-    }
+  color: $primary-blue !important;
+  &:hover { color: $link-color !important; }
 }
 
 .navbar-default {
@@ -26,17 +19,22 @@
   border-color: rgba(231, 231, 231, 0.18);
 
   .logo {
-    width: 200px;
-    height: 37px;
-    margin-top: -9px;
-    background-image: url(../src/data/images/logo-white.png);
+    width: 172px;
+    height: 41px;
+    margin-top: -11px;
+    background-image: url(../src/data/images/logo-white.svg);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+    transition-duration: 0.5s;
+  }
+
+  .logo.toggle {
+    background-image: url(../src/data/images/logo-blue.svg);
   }
 
   .navbar-nav li a {
-    color: #fff;
+    color: $white;
     font-size: 14px;
     text-transform: uppercase;
     font-family: $Montserrat;
@@ -52,6 +50,10 @@
       background-color: rgba(255, 255, 255, 0.0);
     }
   }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #170133 !important;
 }
 
 .navbar-fixed-top {

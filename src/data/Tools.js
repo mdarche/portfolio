@@ -4,13 +4,13 @@ const illustratorLogo = require('./images/home/illustrator-logo.png');
 const indesignLogo = require('./images/home/indesign-logo.png');
 const framerLogo = require('./images/home/framerjs-logo.png');
 const reactLogo = require('./images/home/react-logo.png');
-const nodeLogo = require('./images/home/node-logo.png');
+const jqueryLogo = require('./images/home/jquery-logo.png');
 const xcodeLogo = require('./images/home/xcode-logo.png');
 const swiftLogo = require('./images/home/swift-logo.png');
 const htmlLogo = require('./images/home/html-logo.png');
 const cssLogo = require('./images/home/css-logo.png');
 const wordpressLogo = require('./images/home/wordpress-logo.png');
-const githubLogo = require('./images/home/github-logo.png');
+const sketchLogo = require('./images/home/sketch-logo.png');
 
 const designTools = {
   data: [
@@ -33,6 +33,12 @@ const designTools = {
       url: 'http://www.adobe.com/products/indesign.html'
     },
     {
+      id: 11,
+      image: sketchLogo,
+      title: 'Sketch 3',
+      url: 'https://www.sketchapp.com/'
+    },
+    {
       id: 3,
       image: framerLogo,
       title: 'Framer',
@@ -46,9 +52,9 @@ const designTools = {
     },
     {
       id: 9,
-      image: nodeLogo,
-      title: 'Node.js',
-      url: 'https://nodejs.org/en/'
+      image: jqueryLogo,
+      title: 'jQuery',
+      url: 'https://jquery.com/'
     },
     {
       id: 4,
@@ -79,12 +85,6 @@ const designTools = {
       image: wordpressLogo,
       title: 'Wordpress',
       url: 'https://wordpress.com/'
-    },
-    {
-      id: 11,
-      image: githubLogo,
-      title: 'Git & Github',
-      url: 'https://github.com/'
     }
   ]
 };

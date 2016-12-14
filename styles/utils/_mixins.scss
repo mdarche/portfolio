@@ -1,0 +1,142 @@
+// Breakpoints
+@mixin bp-medium {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+// Animations & Keyframes
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  animation: #{$str};
+}
+
+// Transitions
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  transition: $args;
+}
+
+// Cross-Browser Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Center Auto
+@mixin push-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+// Sizing Shortcut
+@mixin height-width($height, $width){
+  height: $height;
+  width: $width;
+}
+
+// Dividers
+@mixin divider-line($width, $color, $margin) {
+  height: 1px;
+  margin-bottom: 20px;
+  width: $width;
+  margin: $margin;
+  background-color: $color;
+}
+
+// Underline Headings
+@mixin heading-style($color) {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align:left;
+  color: $color;
+}
+
+// Work Page & About Headings
+@mixin gray-title() {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 110px;
+  margin-top: 40px;
+  color: $light-gray;
+  text-transform: uppercase;
+  @include bp-small { font-size: 80px; }
+}
+
+@mixin fadeIn-title($margin-bottom) {
+  text-align: center;
+  margin-top: -108px;
+  margin-bottom: $margin-bottom;
+  font-size: 30px;
+  @include opacity(0);
+  @include transition(ease-in-out .5s);
+  @include bp-small { margin-top: -94px; }
+}
+
+// Background Positioning
+@mixin background($position, $size, $repeat) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+
+// Button Mixin
+@mixin button($color, $width, $text-trans, $font-size) {
+  font-family: $Montserrat;
+  font-size: $font-size;
+  text-transform: $text-trans;
+  color: $color;
+  text-align: center;
+  width: $width;
+  border: 2px solid $color;
+  padding: 20px 0px;
+  cursor: pointer;
+  @include transition(0.5s ease);
+  @include push-auto;
+  a {
+    font-family: $Montserrat, sans-serif;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    background-color: $color;
+    color: $white;
+    a {
+      color: $white;
+    }
+  }
+}

@@ -1,57 +1,43 @@
 #hero {
-  animation: gradientChange 6s ease;
   position: relative;
   margin: 0 auto;
-  width: 100%;
-  height:100vh;
   overflow: hidden;
   background: linear-gradient(to bottom, #160059 0%, #160059 30%, #5b0d4e 50%, #c2213c 90%, #c2213c 100%);
-  background-position: center bottom;
-  background-size: 130%;
+  @include background(center bottom, 130%, '');
+  @include animation('gradientChange 6s ease;');
+  @include height-width(100vh, 100%);
 
   .stars {
     background-image: url(../src/data/images/home/stars.png);
     background-position: top;
-    width: 100%;
-    height: 100%;
+    @include height-width(100%, 100%);
   }
 
   .hills-background {
-    animation: translateBackground 180s linear infinite;
     background-image: url(../src/data/images/home/hills-background.png);
-    background-position: left bottom;
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-position: 0%;
-    width: 100%;
-    height: 100%;
     z-index: 1;
     position: relative;
+    @include background(0%, cover, repeat-x);
+    @include animation('translateBackground 180s linear infinite');
+    @include height-width(100%, 100%);
   }
 
   .hills-foreground {
-    animation: translateBackground 60s linear infinite;
     background-image: url(../src/data/images/home/hills-foreground.png);
-    background-position: left bottom;
-    background-size: cover;
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 100%;
+    @include background(left bottom, cover, repeat-x);
+    @include animation('translateBackground 60s linear infinite');
+    @include height-width(100%, 100%);
   }
 
   .sun {
-    animation: sunTranslate ease 5s;
     margin-top:13.5%;
     background-image: url(../src/data/images/home/hero-sun1.png);
     height:240px;
     background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     z-index: 0;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+    @include background('', contain, no-repeat);
+    @include animation('sunTranslate ease 5s');
+    @include bp-small { display: none; }
   }
 
 }
@@ -59,9 +45,9 @@
 .site-title {
   padding-top: 16%;
   margin-left: 60%;
-  opacity: 1.0;
+  @include opacity(1.0);
 
-  @media screen and (max-width: 768px) {
+  @include bp-small {
     text-align: center;
     margin: 0px;
     padding-top:50%;
@@ -69,46 +55,31 @@
 
   h2 {
     font-size: 52px;
-    font-family: $Montserrat;
-    color: #fff;
+    color: $white;
   }
 
   h3 {
-    color: #fff;
-    animation: subtitleFade ease 4s;
+    color: $white;
     font-size: 30px;
-    font-family: $Montserrat;
     margin-top: -4px;
-    opacity: 0.5;
+    @include opacity(0.5);
+    @include animation('subtitleFade ease 4s');
   }
 }
 
 // Animations
-@keyframes translateBackground {
+@include keyframes(translateBackground) {
   0% { background-position: 0%; }
-  100% { background-position:300%; }
+  100% { background-position: 300%; }
 }
 
-
-@keyframes gradientChange {
-    0%{background-position: center top}
-    100%{background-position: center bottom}
+@include keyframes(gradientChange) {
+    0% { background-position: center top; }
+    100% { background-position: center bottom ;}
 }
 
-
-@keyframes sunTranslate {
-  0% {
-    margin-top: 35%;
-    height: 400px;
-    opacity: 0;
-  }
-  30% {
-    margin-top: 35%;
-    height: 400px;
-    opacity: 1;
-  }
-  100%{
-    margin-top: 13.5%;
-    height: 240px;
-  }
+@include keyframes(sunTranslate) {
+  0% { margin-top: 35%; height: 400px; opacity: 0; }
+  30% { margin-top: 35%; height: 400px; opacity: 1; }
+  100% { margin-top: 13.5%; height: 240px; }
 }
