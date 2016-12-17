@@ -29,9 +29,7 @@
     transition-duration: 0.5s;
   }
 
-  .logo.toggle {
-    background-image: url(../src/data/images/logo-blue.svg);
-  }
+  .logo.toggle { background-image: url(../src/data/images/logo-blue.svg); }
 
   .navbar-nav li a {
     color: $white;
@@ -39,22 +37,16 @@
     text-transform: uppercase;
     font-family: $Montserrat;
     transition: ease .2s;
-    &:hover {
-      color: $link-color;
-    }
+    &:hover { color: $link-color; }
   }
 
   .navbar-toggle {
     border: none;
-    &:hover, &:focus {
-      background-color: rgba(255, 255, 255, 0.0);
-    }
+    &:hover, &:focus { background-color: rgba(255, 255, 255, 0.0); }
   }
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #170133 !important;
-}
+.navbar-default .navbar-toggle .icon-bar { background-color: #170133 !important; }
 
 .navbar-fixed-top {
   background-color: transparent;
@@ -64,4 +56,39 @@
 .navbar-fixed-top.show {
   border-bottom: 1px solid #eaeaea;
   background-color: rgba(255, 255, 255, 0.97);
+}
+
+// Dropdown Styles
+
+.dropdown-menu {
+  top: 104%;
+  padding: 0px 0;
+  min-width: 267px;
+  background-color: rgba(255, 255, 255, 0.13) !important;
+  box-shadow: none;
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+
+  .divider {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.23);
+  }
+  >li>a {
+    padding: 10px 20px;
+    &:hover { background-color: $white; }
+  }
+
+  @include bp-small {
+    background-color: rgba(255, 255, 255, 0.13) !important;
+    li a { color: white !important; }
+  }
+}
+
+.navbar-default .navbar-nav>.open>a {
+  color: $link-color;
+  background-color: transparent;
+  &:hover, &:focus {
+    color: $link-color;
+    background-color: transparent;
+  }
 }

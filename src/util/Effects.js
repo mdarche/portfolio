@@ -16,7 +16,7 @@ $(document).ready(function(){
       $(".overview h4").css("opacity", "0");
     }
 
-    if ($(document).scrollTop() > 720) {
+    if ($(document).scrollTop() > 670) {
       $('#about h4').css('opacity', '1');
     } else {
       $("#about h4").css("opacity", "0");

@@ -44,7 +44,7 @@
   }
 
 .scroll-view.show {
-    max-height: 470px;
+    max-height: 475px;
     @include opacity(1);
   }
 
@@ -71,6 +71,8 @@
         padding-right: 0px;
       }
 
+      p { font-family: $HelveticaNeue; }
+
       p:nth-child(3) {
         padding-top: 15px;
         font-family: $Montserrat;
@@ -83,7 +85,7 @@
       margin: 0px 20px;
       height: 100%;
 
-      img { @include height-width(420px, auto); }
+      img { @include height-width(470px, auto); }
     }
   }
 

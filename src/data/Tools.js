@@ -47,7 +47,7 @@ const designTools = {
     {
       id: 8,
       image: reactLogo,
-      title: 'React.js',
+      title: 'ReactJS',
       url: 'https://facebook.github.io/react/'
     },
     {

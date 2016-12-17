@@ -12,6 +12,7 @@ class WorkOverview extends Component {
 
   componentDidUpdate() {
     document.title = 'Mike Darche | ' + this.props.work[0].title;
+    this.props.fetchCategory(this.props.params.path);
   }
 
   renderPortfolioItems() {

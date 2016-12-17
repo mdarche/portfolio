@@ -12,6 +12,7 @@
 
   a {
     color: rgba(255, 255, 255, 0.8);
+    font-family: $HelveticaNeue !important;
     @include transition(ease .3s);
     &:hover {
       color: $link-color;

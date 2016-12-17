@@ -10,8 +10,8 @@ import NotFound from './components/404/NotFound';
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <Route path="/online-resources" component={OnlineResources} />
-    <Route path="/work/:path" component={WorkOverview} />
+    <Route path="online-resources" component={OnlineResources} />
+    <Route path="work/:path" component={WorkOverview} />
     <Route path ="*" component={NotFound} />
   </Route>
 );

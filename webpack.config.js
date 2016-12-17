@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader?limit=8192'
+        loader: 'url-loader?limit=8192&name=images/[name].[ext]'
       },
       {
         test: /\.svg/,
@@ -41,7 +41,7 @@ module.exports = {
     contentBase: './'
   },
   plugins: [
-    new ExtractTextPlugin('public/style.css', {
+    new ExtractTextPlugin('styles/style.css', {
         allChunks: true
     })
   ]

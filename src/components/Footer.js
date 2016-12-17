@@ -12,11 +12,11 @@ const Footer = () => {
             <div className="divider-light" />
             <ul>
               <li><a href="/#about">About Me</a></li>
-              <li><Link to={'work/web-ux-design'}>Web & UX Design</Link></li>
-              <li><Link to={'work/identity-design'}>Identity Design</Link></li>
-              <li><Link to={'work/print-design'}>Print Design</Link></li>
-              <li><Link to={'work/web-ios-development'}>Web & iOS Dev</Link></li>
-              <li><Link to={'online-resources'}>My Resources</Link></li>
+              <li><Link to={'/work/web-ux-design'}>Web & UX Design</Link></li>
+              <li><Link to={'/work/identity-design'}>Identity Design</Link></li>
+              <li><Link to={'/work/print-design'}>Print Design</Link></li>
+              <li><Link to={'/work/web-ios-development'}>Web & iOS Dev</Link></li>
+              <li><Link to={'/online-resources'}>My Resources</Link></li>
             </ul>
           </div>
 
