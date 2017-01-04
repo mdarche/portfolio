@@ -44,7 +44,7 @@
   }
 
 .scroll-view.show {
-    max-height: 475px;
+    max-height: 490px;
     @include opacity(1);
   }
 
@@ -82,10 +82,13 @@
     }
 
     .featured-image {
-      margin: 0px 20px;
+      margin: 0px 25px;
       height: 100%;
 
-      img { @include height-width(470px, auto); }
+      img {
+        @include height-width(470px, auto);
+        border: 1px solid #dedede;
+      }
     }
   }
 

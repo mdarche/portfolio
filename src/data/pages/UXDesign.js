@@ -1,4 +1,11 @@
 const webDevImage = require('../images/desert.png');
+const birthday1 = require('../images/work/launch.png');
+const birthday6 = require('../images/work/calendar.png');
+const birthday2 = require('../images/work/list.png');
+const birthday3 = require('../images/work/topbirthdays.png');
+const birthday4 = require('../images/work/notifications.png');
+const birthday5 = require('../images/work/lockscreen.png');
+
 
 const uxDesign = {
   data: [
@@ -30,9 +37,12 @@ const uxDesign = {
       tools: 'Photoshop, Illustrator',
       featuredImage: webDevImage,
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage
+        birthday1,
+        birthday6,
+        birthday2,
+        birthday3,
+        birthday4,
+        birthday5
       ]
     },
     {
@@ -49,7 +59,7 @@ const uxDesign = {
       ]
     },
     {
-      title: 'SpaceX Redesign',
+      title: 'SpaceX Mobile Redesign',
       id: 4,
       p1: 'Elon Musk has been a huge inspiration to me, so I was shocked to see the miserable state of the SpaceX website. You have a company with the biggest vision in human history rocking a boring, unresponsive website... What?!',
       p2: 'I don\'t normally do Fanboy projects, but this time I felt compelled. If I had the chance to redesign this site I would emphasize beautiful photography, video, and interactive tours of the Falcon 9 and Dragon rockets. I would also design it with a Mobile First mentality like you see here. I used the existing color palette and typography to avoid altering the SpaceX brand.',
