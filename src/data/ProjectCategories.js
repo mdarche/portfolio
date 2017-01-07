@@ -1,7 +1,7 @@
-const uxImage = require('./images/desert.png');
-const webDevImage = require('./images/mountain.png');
-const identityImage = require('./images/ocean.png');
-const printImage = require('./images/snow.png');
+const uxImage = require('./images/work/desert.png');
+const webDevImage = require('./images/work/mountain.png');
+const identityImage = require('./images/work/ocean.png');
+const printImage = require('./images/work/snow.png');
 
 const projectCategories = {
   data: [

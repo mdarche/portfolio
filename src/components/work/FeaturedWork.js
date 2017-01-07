@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
+import RetinaImage from 'react-retina-image';
 
 class FeaturedWork extends Component {
   constructor(props) {
@@ -18,8 +19,8 @@ class FeaturedWork extends Component {
   renderImageList(images) {
     return images.map((image) => {
       return (
-        <div className="featured-image" key={image.toString()}>
-          <img src={image} alt="featured" />
+        <div className="featured-image" key={image[0].toString()}>
+          <RetinaImage src={[image[0], image[1]]} alt="featured" />
         </div>
       );
     });

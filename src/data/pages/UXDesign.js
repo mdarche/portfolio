@@ -1,11 +1,49 @@
-const webDevImage = require('../images/desert.png');
-const birthday1 = require('../images/work/launch.png');
-const birthday6 = require('../images/work/calendar.png');
-const birthday2 = require('../images/work/list.png');
-const birthday3 = require('../images/work/topbirthdays.png');
-const birthday4 = require('../images/work/notifications.png');
-const birthday5 = require('../images/work/lockscreen.png');
+const webDevImage = require('../images/work/desert.png');
 
+// GymSpotter
+
+const filterSM = require('../images/work/gymspot/filter.png');
+const filterLG = require('../images/work/gymspot/filter@2x.png');
+const loginSM = require('../images/work/gymspot/login.png');
+const loginLG = require('../images/work/gymspot/login@2x.png');
+const menuSM = require('../images/work/gymspot/mainMenu.png');
+const menuLG = require('../images/work/gymspot/mainMenu@2x.png');
+const mapSM = require('../images/work/gymspot/map.png');
+const mapLG = require('../images/work/gymspot/map@2x.png');
+const calloutSM = require('../images/work/gymspot/mapCallout.png');
+const calloutLG = require('../images/work/gymspot/mapCallout@2x.png');
+const searchSM = require('../images/work/gymspot/search.png');
+const searchLG = require('../images/work/gymspot/search@2x.png');
+
+// Birthday Alert
+
+const launchSM = require('../images/work/birthday/launch.png');
+const launchLG = require('../images/work/birthday/launch@2x.png');
+const calendarSM = require('../images/work/birthday/calendar.png');
+const calendarLG = require('../images/work/birthday/calendar@2x.png');
+const listSM = require('../images/work/birthday/list.png');
+const listLG = require('../images/work/birthday/list@2x.png');
+const topbdaySM = require('../images/work/birthday/topbirthdays.png');
+const topbdayLG = require('../images/work/birthday/topbirthdays@2x.png');
+const notificationsSM = require('../images/work/birthday/notifications.png');
+const notificationsLG = require('../images/work/birthday/notifications@2x.png');
+const lockSM = require('../images/work/birthday/lockscreen.png');
+const lockLG = require('../images/work/birthday/lockscreen@2x.png');
+
+// SpaceX
+
+const homeTopSM = require('../images/work/spacex/homeTop.png');
+const homeTopLG = require('../images/work/spacex/homeTop@2x.png');
+const homeBottomSM = require('../images/work/spacex/homeBottom.png');
+const homeBottomLG = require('../images/work/spacex/homeBottom@2x.png');
+const f9SM = require('../images/work/spacex/f9.png');
+const f9LG = require('../images/work/spacex/f9@2x.png');
+const f9openSM = require('../images/work/spacex/f9open.png');
+const f9openLG = require('../images/work/spacex/f9open@2x.png');
+const fhSM = require('../images/work/spacex/fh.png');
+const fhLG = require('../images/work/spacex/fh@2x.png');
+const dragonSM = require('../images/work/spacex/dragon.png');
+const dragonLG = require('../images/work/spacex/dragon@2x.png');
 
 const uxDesign = {
   data: [
@@ -17,19 +55,6 @@ const uxDesign = {
       p2: 'I mostly design for eCommerce stores and informational websites, but in my spare time I love to ideate web and mobile apps. My process always begins with notebook sketches that evolve into digital wireframes, an app flow diagram, and then fully polished mockups. As we enter the age of 3D visual design with AR/VR, I plan to adapt my ideas to these new media. Check out a selection of my work below:'
     },
     {
-      title: 'GymSpotter',
-      id: 1,
-      p1: 'GymSpotter is a simple gym discovery application that I\'m building in React Native for Android and iOS. The idea was born out of my frustration to find specific types of gyms in cities that I often visit. At its core, GymSpotter is an improved skin for querying Google Places with a pre-defined set of keywords.',
-      p2: 'This style is heavily influenced by Google\'s Material Design guidelines. It neatly delivers all of the information you need to find your ideal workout, no matter where you go.',
-      tools: 'Photoshop, Illustrator, Framer',
-      images: [
-        webDevImage,
-        webDevImage,
-        webDevImage,
-        webDevImage
-      ]
-    },
-    {
       title: 'Birthday Alert',
       id: 2,
       p1: 'Birthday Alert is my plan for a mobile app that uses your Contact list and Facebook account to schedule customized birthday reminders. I find that Facebook does a spotty job of sending birthday notifications, so an app like this would bail me out of all sorts of sticky situations. My design is minimal yet very practical.',
@@ -37,12 +62,27 @@ const uxDesign = {
       tools: 'Photoshop, Illustrator',
       featuredImage: webDevImage,
       images: [
-        birthday1,
-        birthday6,
-        birthday2,
-        birthday3,
-        birthday4,
-        birthday5
+        [launchSM, launchLG],
+        [calendarSM, calendarLG],
+        [listSM, listLG],
+        [topbdaySM, topbdayLG],
+        [notificationsSM, notificationsLG],
+        [lockSM, lockLG]
+      ]
+    },
+    {
+      title: 'GymSpotter',
+      id: 1,
+      p1: 'GymSpotter is a simple gym discovery application that I\'m building in React Native for Android and iOS. The idea was born out of my frustration to find specific types of gyms in cities that I often visit. At its core, GymSpotter is an improved skin for querying Google Places with a pre-defined set of keywords.',
+      p2: 'This style is heavily influenced by Google\'s Material Design guidelines. It neatly delivers all of the information you need to find your ideal workout, no matter where you go.',
+      tools: 'Photoshop, Illustrator, Framer',
+      images: [
+        [loginSM, loginLG],
+        [mapSM, mapLG],
+        [calloutSM, calloutLG],
+        [filterSM, filterLG],
+        [menuSM, menuLG],
+        [searchSM, searchLG]
       ]
     },
     {
@@ -53,9 +93,11 @@ const uxDesign = {
       tools: 'Photoshop, Illustrator',
       featuredImage: webDevImage,
       images: [
+        [
         webDevImage,
         webDevImage,
         webDevImage
+        ]
       ]
     },
     {
@@ -66,9 +108,12 @@ const uxDesign = {
       tools: 'Photoshop, Illustrator, Framer',
       featuredImage: webDevImage,
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage
+        [homeTopSM, homeTopLG],
+        [homeBottomSM, homeBottomLG],
+        [f9SM, f9LG],
+        [f9openSM, f9openLG],
+        [fhSM, fhLG],
+        [dragonSM, dragonLG]
       ]
     }
   ]

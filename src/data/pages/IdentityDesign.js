@@ -1,13 +1,28 @@
-const webDevImage = require('../images/ocean.png');
+const identityImage = require('../images/work/ocean.png');
+
+// Logos
+
+const scooperSM = require('../images/work/logos/scooper.png');
+const scooperLG = require('../images/work/logos/scooper@2x.png');
+const scooperFullSM = require('../images/work/logos/scooperFull.png');
+const scooperFullLG = require('../images/work/logos/scooperFull@2x.png');
+const sozaeSM = require('../images/work/logos/sozae.png');
+const sozaeLG = require('../images/work/logos/sozae@2x.png');
+const hmbySM = require('../images/work/logos/hmby.png');
+const hmbyLG = require('../images/work/logos/hmby@2x.png');
+const eventzapSM = require('../images/work/logos/eventzap.png');
+const eventzapLG = require('../images/work/logos/eventzap@2x.png');
+const rrSM = require('../images/work/logos/riverwalkrehab.png');
+const rrLG = require('../images/work/logos/riverwalkrehab@2x.png');
 
 const identityDesign = {
   data: [
     {
       title: 'Identity Design',
       category: 'Design',
-      banner: webDevImage,
-      p1: 'Jeff Bezos and dozens of other business leaders often say that \'Your brand is what people say about you behind your back\'. This statement certainly nails the essence of branding and its underlying strategy. While there are many different components involved with branding, I am most drawn to visual identity.',
-      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always interested me in the world of design. I think it\'s incredible that terrible products can be saved by a powerful brand, and that amazing products might never be recognized if they lack a strong visual identity. Since graduating school, I\'ve had the chance to develop or co-develop brand identities on a few different projects.'
+      banner: identityImage,
+      p1: 'Jeff Bezos and dozens of other business leaders often say that \'Your brand is what people say about you behind your back\'. I think it\'s incredible how terrible products can be saved by powerful branding, and amazing products might never be recognized if they lack a strong identity.',
+      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always drawn me to design. In the last 3 years, I\'ve had the chance to develop or co-develop brand identities on a few different projects. Below is a small sample of my work.'
     },
     {
       title: 'Logo Design',
@@ -16,23 +31,12 @@ const identityDesign = {
       p2: '',
       tools: 'Pencils & Paper, Illustrator',
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage,
-        webDevImage
-      ]
-    },
-    {
-      title: 'Catalyze',
-      id: 2,
-      p1: 'At Catalyze, having the flexibility to design our brand has been an awesome learning experience and a great way to test ideas. Every opportunity to put something in front of a customer or a prospect is a chance to show our message and highlight our attention to detail.',
-      p2: 'In response to our growth over the last few years, we have tuned up our logo and type specs, streamlined our internal design templates, and updated our mission over a variety of media. These are a few of the documents I have had the pleasure to prepare for us.',
-      tools: 'Photoshop, Illustrator, InDesign',
-      featuredImage: webDevImage,
-      images: [
-        webDevImage,
-        webDevImage,
-        webDevImage
+        [scooperFullSM, scooperFullLG],
+        [scooperSM, scooperLG],
+        [hmbySM, hmbyLG],
+        [sozaeSM, sozaeLG],
+        [eventzapSM, eventzapLG],
+        [rrSM, rrLG]
       ]
     }
   ]

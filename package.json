@@ -33,6 +33,7 @@
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
+    "react-retina-image": "^2.0.3",
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",

@@ -1,4 +1,33 @@
-const webDevImage = require('../images/mountain.png');
+const webDevImage = require('../images/work/mountain.png');
+
+// Scooper
+
+const scoopHomeSM = require('../images/work/scooper/scooperHome.jpg');
+const scoopHomeLG = require('../images/work/scooper/scooperHome@2x.jpg');
+const scoopvSM = require('../images/work/scooper/scooperVs.jpg');
+const scoopvLG = require('../images/work/scooper/scooperVs@2x.jpg');
+const scoopVidSM = require('../images/work/scooper/scooperVid.jpg');
+const scoopVidLG = require('../images/work/scooper/scooperVid@2x.jpg');
+const scoopSearchSM = require('../images/work/scooper/scooperSearch.jpg');
+const scoopSearchLG = require('../images/work/scooper/scooperSearch@2x.jpg');
+const scoopProfileSM = require('../images/work/scooper/scooperProfile.jpg');
+const scoopProfileLG = require('../images/work/scooper/scooperProfile@2x.jpg');
+const scoopInviteSM = require('../images/work/scooper/scooperInvite.jpg');
+const scoopInviteLG = require('../images/work/scooper/scooperInvite@2x.jpg');
+
+// Wordpress
+const catalyzeSM = require('../images/work/wordpress/catalyze.jpg');
+const catalyzeLG = require('../images/work/wordpress/catalyze@2x.jpg');
+const assuritySM = require('../images/work/wordpress/assurity.jpg');
+const assurityLG = require('../images/work/wordpress/assurity@2x.jpg');
+const greengearSM = require('../images/work/wordpress/greengear.jpg');
+const greengearLG = require('../images/work/wordpress/greengear@2x.jpg');
+const mattvoSM = require('../images/work/wordpress/mattVo.jpg');
+const mattvoLG = require('../images/work/wordpress/mattVo@2x.jpg');
+
+// Portfolio Site
+
+const portSite = require('../images/work/inception.gif');
 
 const webDev = {
   data: [
@@ -6,46 +35,47 @@ const webDev = {
       title: 'Web & iOS Development',
       category: 'Code',
       banner: webDevImage,
-      p1: 'I first dabbled with front-end web development after taking a series of interactive classes on Codecademy in 2012. This seemed HUGE at the time, but I quickly realized that I wasn\'t really programming, and that most sites aren\'t built on markup, styles, and jQuery alone. I decided to wiggle my way into Object Oriented Programming by taking a Ruby on Rails class at my University.',
-      p2: 'From there, code became my grown up version of Legos. I gained a much better understanding of how static design actually translates into applications by building a few of them myself. I also learned Swift soon after its initial 2014 release so I could break into the native mobile app world. Right now my focus has shifted to ReactJS in preparation for ReactVR and cross-platform mobile experiences.'
+      p1: 'I first dabbled with front-end web development after taking a series of classes on Codecademy in 2012. This was a big deal at the time, but I quickly realized that I wasn\'t really programming and that most sites aren\'t built on markup, styles, and jQuery alone. I decided to wiggle my way into Object Oriented Programming by taking a Ruby on Rails class at my school.',
+      p2: 'Code quickly became my grown up version of Legos. I gained a much better understanding of how static design actually translates into applications by building a few different projects. I also learned Swift soon after its initial release so I could break into the mobile app world. Right now my focus has shifted to ReactJS in preparation for ReactVR and cross-platform mobile experiences.'
     },
     {
       title: 'Scooper',
       id: 1,
-      p1: 'Scooper was a 1v1 video challenge application where users could capture a Vine-style video, send it to a friend, and be judged by their peers. I originally contracted developers to build this, but I was unhappy with the outcome (many required features didn\'t work). Naturally, I decided redesign and rebuild the iOS portion myself.',
-      p2: 'I spent over 8 months learning Swift and mastering the Storyboard to rebuild the application on Parse and AWS. Unfortunately my team fell apart and Facebook announced its plan to eliminate Parse. I still think video challenge is a great idea, but I decided to take my new knowledge and apply it to other projects. Scooper is no longer on the App Store, but you can see screenshots here:',
+      p1: 'Scooper was a 1v1 video challenge application where users could capture a Vine-style video, send it to a friend, and be judged by their peers. I originally contracted developers to build this, but I was unhappy with the outcome (many features didn\'t work). I decided redesign and rebuild the iOS portion myself.',
+      p2: 'I spent over 8 months learning Swift and mastering the Storyboard to rebuild the application on Parse and AWS. Unfortunately my team fell apart and Facebook announced its plan to terminate Parse. I still think video challenge is a great idea, but I decided to take my new knowledge and apply it to other projects. Scooper is no longer on the App Store, but you can see screenshots here:',
       tools: 'Swift, Xcode, Photoshop, Illustrator',
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage,
-        webDevImage
+        [scoopHomeSM, scoopHomeLG],
+        [scoopvSM, scoopvLG],
+        [scoopVidSM, scoopVidLG],
+        [scoopSearchSM, scoopSearchLG],
+        [scoopProfileSM, scoopProfileLG],
+        [scoopInviteSM, scoopInviteLG]
       ]
     },
     {
       title: 'Assorted Wordpress Projects',
       id: 2,
-      p1: 'At Catalyze, we build informational websites or eCommerce stores depending on our clients\' needs. I regularly build informational sites on Wordpress. No user wants to be caught with their pants around their ankles when making a minor edit, so we opt for WP as our CMS of choice because of its user-friendly client dashboard.',
-      p2: 'My Wordpress development usually entails manipulating Theme PHP files, editing plugin styles, and styling custom selectors. For client projects, I like to use theme builders solely for their responsive grids so I can write my own HTML and CSS. The visual grid also helps clients understand how to use their sites post-build.',
+      p1: 'At Catalyze, we build informational websites and eCommerce stores depending on our clients\' needs. I regularly build sites on Wordpress because of its user-friendly CMS dashboard.',
+      p2: 'My Wordpress development usually entails manipulating Theme PHP files, editing plugins, and styling custom selectors. For client projects, I like to use theme builders for their responsive grids so I can write my own HTML and CSS. The visual grid also helps clients understand how to use their sites post-build.',
       tools: 'Wordpress, HTML & CSS, Javascript, Photoshop, Illustrator, Dev Tools',
       featuredImage: webDevImage,
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage
+        [catalyzeSM, catalyzeLG],
+        [assuritySM, assurityLG],
+        [greengearSM, greengearLG],
+        [mattvoSM, mattvoLG]
       ]
     },
     {
       title: 'Portfolio Site',
       id: 3,
-      p1: 'It may seem overkill, but this entire website was built from scratch using React and Redux (gasp). Why such powerful tools to create something so simple? Easy - it\'s an excellent opportunity to learn! Through this experience I brushed up on ES6 Javascript and I finally grasped the concept of a virtual DOM with state.',
-      p2: 'Each page is completely modular and rendered from data objects that pass through actions and reducers, much like dummy network requests. I also created all of the vector artwork using Illustrator to add my own unique touch. The whole project is Open Source, hosted on Github Pages, and available on my Github account.',
+      p1: 'It may seem overkill, but this entire website was built from scratch using React and Redux (gasp). Why such powerful tools to create something so simple? Easy - it\'s an excellent opportunity to learn! Through this experience I brushed up on ES6 Javascript and I learned the concept of a virtual DOM with state.',
+      p2: 'Each page is modular and rendered from data objects that pass through actions and reducers, much like dummy network requests. I also created all of the vector artwork with Illustrator to add my own unique style. The whole project is Open Source, hosted on Github Pages, and available on my Github account.',
       tools: 'ReactJS, Webpack, Sass, Illustrator, Photoshop, Dev Tools',
       featuredImage: webDevImage,
       images: [
-        webDevImage,
-        webDevImage,
-        webDevImage
+        [portSite, portSite]
       ]
     }
   ]
