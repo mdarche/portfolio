@@ -61,7 +61,7 @@ FeaturedWork.propTypes = {
     p1: PropTypes.string,
     p2: PropTypes.string,
     tools: PropTypes.string,
-    images: PropTypes.arrayOf(PropTypes.string)
+    images: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string))
   })
 };
 

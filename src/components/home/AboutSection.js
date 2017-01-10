@@ -1,29 +1,10 @@
 import React, { Component } from 'react';
+import RetinaImage from 'react-retina-image';
 
 const portrait = require('../../data/images/home/vectorportrait.png');
+const retinaPortrait = require('../../data/images/home/vectorportrait@2x.png');
 
 export default class AboutSection extends Component {
-
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     imgSrc: portrait
-  //   };
-  //   this.handleMouseOver = this.handleMouseOver.bind(this);
-  //   this.handleMouseOut = this.handleMouseOut.bind(this);
-  // }
-  //
-  // handleMouseOver() {
-  //   this.setState({
-  //     imgSrc: portraitHov
-  //   });
-  // }
-  //
-  // handleMouseOut() {
-  //   this.setState({
-  //     imgSrc: portrait
-  //   });
-  // }
 
   render() {
     return (
@@ -33,7 +14,7 @@ export default class AboutSection extends Component {
           <h4>About Me</h4>
 
           <div className="col-md-4 portrait">
-            <img src={portrait} alt="Mike Darche" />
+            <RetinaImage src={[portrait, retinaPortrait]} alt="Mike Darche" />
           </div>
 
           <div className="col-md-4">
@@ -56,7 +37,7 @@ export default class AboutSection extends Component {
               <li>Reading nonfiction</li>
               <li>Early morning workouts</li>
               <li>Cooking or anything kitchen-related</li>
-              <li>Gradients and vector artwork</li>
+              <li>Vector illustrations</li>
               <li>Red wine</li>
               <li>Pinterest</li>
             </ul>

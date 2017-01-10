@@ -4,21 +4,21 @@ const webDevImage = require('../images/work/desert.png');
 
 const filterSM = require('../images/work/gymspot/filter.png');
 const filterLG = require('../images/work/gymspot/filter@2x.png');
-const loginSM = require('../images/work/gymspot/login.png');
-const loginLG = require('../images/work/gymspot/login@2x.png');
+const loginSM = require('../images/work/gymspot/login.jpg');
+const loginLG = require('../images/work/gymspot/login@2x.jpg');
 const menuSM = require('../images/work/gymspot/mainMenu.png');
 const menuLG = require('../images/work/gymspot/mainMenu@2x.png');
-const mapSM = require('../images/work/gymspot/map.png');
-const mapLG = require('../images/work/gymspot/map@2x.png');
-const calloutSM = require('../images/work/gymspot/mapCallout.png');
-const calloutLG = require('../images/work/gymspot/mapCallout@2x.png');
-const searchSM = require('../images/work/gymspot/search.png');
-const searchLG = require('../images/work/gymspot/search@2x.png');
+const mapSM = require('../images/work/gymspot/map.jpg');
+const mapLG = require('../images/work/gymspot/map@2x.jpg');
+const calloutSM = require('../images/work/gymspot/mapCallout.jpg');
+const calloutLG = require('../images/work/gymspot/mapCallout@2x.jpg');
+const searchSM = require('../images/work/gymspot/search.jpg');
+const searchLG = require('../images/work/gymspot/search@2x.jpg');
 
 // Birthday Alert
 
-const launchSM = require('../images/work/birthday/launch.png');
-const launchLG = require('../images/work/birthday/launch@2x.png');
+const launchSM = require('../images/work/birthday/launch.jpg');
+const launchLG = require('../images/work/birthday/launch@2x.jpg');
 const calendarSM = require('../images/work/birthday/calendar.png');
 const calendarLG = require('../images/work/birthday/calendar@2x.png');
 const listSM = require('../images/work/birthday/list.png');
@@ -27,15 +27,15 @@ const topbdaySM = require('../images/work/birthday/topbirthdays.png');
 const topbdayLG = require('../images/work/birthday/topbirthdays@2x.png');
 const notificationsSM = require('../images/work/birthday/notifications.png');
 const notificationsLG = require('../images/work/birthday/notifications@2x.png');
-const lockSM = require('../images/work/birthday/lockscreen.png');
-const lockLG = require('../images/work/birthday/lockscreen@2x.png');
+const lockSM = require('../images/work/birthday/lockscreen.jpg');
+const lockLG = require('../images/work/birthday/lockscreen@2x.jpg');
 
 // SpaceX
 
-const homeTopSM = require('../images/work/spacex/homeTop.png');
-const homeTopLG = require('../images/work/spacex/homeTop@2x.png');
-const homeBottomSM = require('../images/work/spacex/homeBottom.png');
-const homeBottomLG = require('../images/work/spacex/homeBottom@2x.png');
+const homeTopSM = require('../images/work/spacex/homeTop.jpg');
+const homeTopLG = require('../images/work/spacex/homeTop@2x.jpg');
+const homeBottomSM = require('../images/work/spacex/homeBottom.jpg');
+const homeBottomLG = require('../images/work/spacex/homeBottom@2x.jpg');
 const f9SM = require('../images/work/spacex/f9.png');
 const f9LG = require('../images/work/spacex/f9@2x.png');
 const f9openSM = require('../images/work/spacex/f9open.png');

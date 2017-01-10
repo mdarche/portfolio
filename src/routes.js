@@ -12,6 +12,6 @@ export default(
     <IndexRoute component={Home} />
     <Route path="online-resources" component={OnlineResources} />
     <Route path="work/:path" component={WorkOverview} />
-    <Route path ="*" component={NotFound} />
+    <Route path="*" component={NotFound} />
   </Route>
 );
