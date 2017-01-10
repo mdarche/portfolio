@@ -2,15 +2,15 @@
 const photoshopLogo = require('./images/home/photoshop-logo.png');
 const illustratorLogo = require('./images/home/illustrator-logo.png');
 const indesignLogo = require('./images/home/indesign-logo.png');
-const framerLogo = require('./images/home/framerjs-logo.png');
+const framerLogo = require('./images/home/framerjs-logo.jpg');
 const reactLogo = require('./images/home/react-logo.png');
-const jqueryLogo = require('./images/home/jquery-logo.png');
-const xcodeLogo = require('./images/home/xcode-logo.png');
+const jqueryLogo = require('./images/home/jquery-logo.jpg');
+const xcodeLogo = require('./images/home/xcode-logo.jpg');
 const swiftLogo = require('./images/home/swift-logo.png');
 const htmlLogo = require('./images/home/html-logo.png');
 const cssLogo = require('./images/home/css-logo.png');
 const wordpressLogo = require('./images/home/wordpress-logo.png');
-const sketchLogo = require('./images/home/sketch-logo.png');
+const sketchLogo = require('./images/home/sketch-logo.jpg');
 
 const designTools = {
   data: [

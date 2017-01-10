@@ -1,31 +1,40 @@
+var webpack = require('webpack');
+var path = require('path');
+var HTMLWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const webpack = require('webpack');
+const VENDOR_LIBS = [
+  'lodash', 'redux', 'react-redux', 'react', 'react-dom', 'react-router', 'redux-promise', 'react-retina-image'
+];
 
 module.exports = {
-  // devtool: 'cheap-module-source-map',
-  entry: './src/index.js',
+  devtool: 'cheap-module-source-map',
+  entry: {
+    bundle: './src/index.js',
+    vendor: VENDOR_LIBS
+  },
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015', 'stage-1']
-        }
+        use: 'babel-loader',
+        test: /\.js$/,
+        exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!sass')
+        test: /\.(scss|css)$/,
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: ['css-loader', 'sass-loader']
+        })
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: 'url-loader?limit=8192&name=images/[name].[ext]'
+        loader: 'url-loader?limit=8000&name=images/[name].[ext]'
       },
       {
         test: /\.svg/,
@@ -33,22 +42,23 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
-  },
   devServer: {
     historyApiFallback: true,
     contentBase: './'
   },
+  // performance: {
+  //   hints: false
+  // },
   plugins: [
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     NODE_ENV: JSON.stringify('production')
-    //   }
-    // }),
-    // new webpack.optimize.UglifyJsPlugin(),
-    new ExtractTextPlugin('styles/style.css', {
-        allChunks: true
-    })
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['vendor', 'manifest']
+    }),
+    new HTMLWebpackPlugin({
+      template: 'src/index.html'
+    }),
+    new ExtractTextPlugin('styles.css')
   ]
 };

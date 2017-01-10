@@ -25,10 +25,6 @@ const greengearLG = require('../images/work/wordpress/greengear@2x.jpg');
 const mattvoSM = require('../images/work/wordpress/mattVo.jpg');
 const mattvoLG = require('../images/work/wordpress/mattVo@2x.jpg');
 
-// Portfolio Site
-
-const portSite = require('../images/work/inception.gif');
-
 const webDev = {
   data: [
     {
@@ -70,12 +66,12 @@ const webDev = {
     {
       title: 'Portfolio Site',
       id: 3,
-      p1: 'It may seem overkill, but this entire website was built from scratch using React and Redux (gasp). Why such powerful tools to create something so simple? Easy - it\'s an excellent opportunity to learn! Through this experience I brushed up on ES6 Javascript and I learned the concept of a virtual DOM with state.',
-      p2: 'Each page is modular and rendered from data objects that pass through actions and reducers, much like dummy network requests. I also created all of the vector artwork with Illustrator to add my own unique style. The whole project is Open Source, hosted on Github Pages, and available on my Github account.',
+      p1: 'It may seem overkill, but this entire website was built from scratch using React and Redux (gasp). Why such powerful tools to create something so simple? Easy - it\'s an excellent opportunity to learn! Through this experience I learned ES2015 Javascript, Webpack 2, and the unfamiliar concepts of a virtual DOM with state.',
+      p2: 'Each page is modular and rendered from static data that passes through actions and reducers, much like dummy network requests. I also created all of the vector artwork with Illustrator to add my own unique style. The whole project is Open Source, hosted on Github Pages, and available on my Github account.',
       tools: 'ReactJS, Webpack, Sass, Illustrator, Photoshop, Dev Tools',
       featuredImage: webDevImage,
       images: [
-        [portSite, portSite]
+        ['https://media.giphy.com/media/oQUc6bVmcxsR2/giphy.gif', 'https://media.giphy.com/media/oQUc6bVmcxsR2/giphy.gif']
       ]
     }
   ]
