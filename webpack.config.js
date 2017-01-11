@@ -8,7 +8,7 @@ const VENDOR_LIBS = [
 ];
 
 module.exports = {
-  devtool: 'cheap-module-source-map',
+  // devtool: 'cheap-module-source-map',
   entry: {
     bundle: './src/index.js',
     vendor: VENDOR_LIBS
@@ -57,7 +57,8 @@ module.exports = {
       names: ['vendor', 'manifest']
     }),
     new HTMLWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      favicon: path.join('src/data/images', 'favicon.png')
     }),
     new ExtractTextPlugin('styles.css')
   ]

@@ -6,7 +6,12 @@
 
   #nameBG { @include gray-title(); }
 
-  h4 { @include fadeIn-title(140px); }
+  h4 {
+    @include fadeIn-title(140px);
+    opacity: 0;
+  }
+
+  h4.toggle { opacity: 1; }
 
   .heading {
     @include heading-style(#333333);

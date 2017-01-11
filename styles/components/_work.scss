@@ -34,7 +34,12 @@
 
   h3 { @include gray-title(); }
 
-  h4 { @include fadeIn-title(110px); }
+  h4 {
+    @include fadeIn-title(110px);
+    opacity: 0;
+  }
+
+  h4.toggle { opacity: 1; }
 
   p {
     font-size: 18px;

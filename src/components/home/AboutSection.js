@@ -6,12 +6,38 @@ const retinaPortrait = require('../../data/images/home/vectorportrait@2x.png');
 
 export default class AboutSection extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggle: false
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    if (window.pageYOffset > 660) {
+      this.setState({ toggle: true });
+    } else {
+      this.setState({ toggle: false });
+    }
+  }
+
   render() {
+    const headingClass = this.state.toggle ? 'toggle' : '';
+
     return (
       <div className="container">
         <div className="row" id="about">
           <h3 id="nameBG">MKD</h3>
-          <h4>About Me</h4>
+          <h4 className={headingClass}>About Me</h4>
 
           <div className="col-md-4 portrait">
             <RetinaImage src={[portrait, retinaPortrait]} alt="Mike Darche" />
