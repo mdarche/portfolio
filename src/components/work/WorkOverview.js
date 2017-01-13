@@ -33,6 +33,7 @@ class WorkOverview extends Component {
       <div>
       <Heading heading={heading} />
       {this.renderPortfolioItems()}
+      <div id="modal-test" />
       </div>
     );
   }

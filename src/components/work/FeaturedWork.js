@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 import classnames from 'classnames';
 import RetinaImage from 'react-retina-image';
+import { openModal } from '../../actions/index';
 
 class FeaturedWork extends Component {
   constructor(props) {
@@ -16,11 +18,19 @@ class FeaturedWork extends Component {
       }
   }
 
+  onImageClick(image) {
+    this.props.openModal(image);
+  }
+
   renderImageList(images) {
     return images.map((image) => {
       return (
         <div className="featured-image" key={image[0].toString()}>
-          <RetinaImage src={[image[0], image[1]]} alt="featured" />
+          <RetinaImage
+            onClick={this.onImageClick.bind(this, image[1])}
+            src={[image[0], image[1]]}
+            alt="featured"
+          />
         </div>
       );
     });
@@ -65,4 +75,4 @@ FeaturedWork.propTypes = {
   })
 };
 
-export default FeaturedWork;
+export default connect(null, { openModal })(FeaturedWork);

@@ -4,6 +4,8 @@ import { printDesign } from '../data/pages/PrintDesign';
 import { webDev } from '../data/pages/WebDev';
 
 export const FETCH_CATEGORY = 'FETCH_CATEGORY';
+export const MODAL_ON = 'MODAL_ON';
+export const MODAL_OFF = 'MODAL_OFF';
 
 export function fetchCategory(path) {
   let request;
@@ -28,5 +30,19 @@ export function fetchCategory(path) {
   return {
     type: FETCH_CATEGORY,
     payload: request
+  };
+}
+
+export function openModal(image) {
+  return {
+    type: MODAL_ON,
+    payload: image
+  };
+}
+
+export function closeModal() {
+  return {
+    type: MODAL_OFF,
+    payload: null
   };
 }

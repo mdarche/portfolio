@@ -1,0 +1,29 @@
+.modal-overlay {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.82);
+  height: 100%;
+  width: 100%;
+  transition: ease .5s;
+
+  .show {
+    display: block;
+  }
+
+  .modal-inner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  .image-modal {
+    position: relative;
+    height: 75vh;
+    width: 70vw;
+    margin-top: 12vh;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

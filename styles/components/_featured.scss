@@ -84,6 +84,7 @@
     .featured-image {
       margin: 0px 25px;
       height: 100%;
+      cursor: pointer;
 
       img {
         @include height-width(470px, auto);

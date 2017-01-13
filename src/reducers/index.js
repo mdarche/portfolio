@@ -7,8 +7,10 @@ import {
   designThinkingTools,
   devTools,
   projectTools } from './ResourcesReducer';
+import ModalReducer from './ModalReducer';
 
 const rootReducer = combineReducers({
+  modal: ModalReducer,
   work: WorkReducer,
   categories,
   tools,
