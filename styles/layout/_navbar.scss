@@ -50,7 +50,8 @@
 
 .navbar-fixed-top {
   background-color: transparent;
-  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+  border:none;
+  // border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 
 .navbar-fixed-top.show {

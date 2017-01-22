@@ -75,7 +75,7 @@ const designResources = {
       title: 'FastCo Design',
       image: codesignLogo,
       type: 'Learning',
-      description: 'A great news site for web and UX designers.',
+      description: 'Another helpful reading resource for web and UX designers.',
       url: 'https://www.fastcodesign.com/'
     },
     {
@@ -131,7 +131,7 @@ const designResources = {
       title: 'Dribbble',
       image: dribbbleLogo,
       type: 'Inspiration',
-      description: 'The best showcase for interaction design in the form of snapshots. I\'ll get on here soon...',
+      description: 'A great showcase for design in the form of snapshots. I\'ll get on here soon...',
       url: 'https://dribbble.com/'
     }
   ]
@@ -144,7 +144,7 @@ const designThinkingResources = {
       title: 'IDEO',
       image: ideoLogo,
       type: 'Learning',
-      description: 'The OGs who pioneered Design Thinking in business offer all sorts of great resources and blog posts',
+      description: 'The OGs who pioneered Design Thinking in business offer all sorts of useful tips',
       url: 'https://designthinking.ideo.com/'
     },
     {
@@ -168,8 +168,8 @@ const designThinkingResources = {
       title: 'TheUXblog',
       image: uxblogLogo,
       type: 'Learning',
-      description: 'Really great articles on User Experience by some awesome designers',
-      url: 'https://www.smashingmagazine.com/'
+      description: 'Really great articles on User Experience by some awesome people',
+      url: 'https://theuxblog.com/'
     }
   ]
 };
@@ -181,31 +181,31 @@ const developmentResources = {
       title: 'Udemy',
       image: udemyLogo,
       type: 'Learning',
-      description: 'My favorite online course platform. Brilliant UI and some of the best courses Ive seen.',
+      description: 'My favorite online course platform. Brilliant UX and some of the best courses Ive seen.',
       url: 'https://www.udemy.com/courses/'
-    },
-    {
-      id: 1,
-      title: 'CodeSchool',
-      image: codeschoolLogo,
-      type: 'Learning',
-      description: 'In-browser code editing for learning web technologies!',
-      url: 'https://www.codeschool.com/'
     },
     {
       id: 2,
       title: 'Codecademy',
       image: codecademyLogo,
       type: 'Learning',
-      description: 'In-browser code editing for learning web technologies!',
+      description: 'The original in-browser code editor and tutorial site for learning web technologies.',
       url: 'https://www.codecademy.com/'
+    },
+    {
+      id: 1,
+      title: 'CodeSchool',
+      image: codeschoolLogo,
+      type: 'Learning',
+      description: 'Another in-browser code editor and tutorial site for learning web technologies.',
+      url: 'https://www.codeschool.com/'
     },
     {
       id: 3,
       title: 'Stack Overflow',
       image: stackoverflowLogo,
       type: 'Learning',
-      description: 'Google Search on steroids for devs. Chances are likely that somebody has encountered the same problem before.',
+      description: 'Google Search on steroids for devs. Chances are high that somebody has encountered your problem before.',
       url: 'http://stackoverflow.com/'
     },
     {
@@ -229,7 +229,7 @@ const developmentResources = {
       title: 'Apiary',
       image: apiaryLogo,
       type: 'Tool',
-      description: 'This nifty tool lets you build mock APIs that send static json to your front-end applications. Excellent for testing.',
+      description: 'This nifty tool lets you build mock APIs that send static json to your front-end applications. Excellent for prototyping.',
       url: 'https://apiary.io/'
     },
     {
@@ -245,7 +245,7 @@ const developmentResources = {
       title: 'Reddit',
       image: redditLogo,
       type: 'Learning',
-      description: 'Subreddits for programming languages are a great place to stay on top of news and common mistakes.',
+      description: 'Subreddits for programming languages are a great place to stay on top of news.',
       url: 'https://www.reddit.com/'
     },
     {
@@ -274,7 +274,7 @@ const projectResources = {
       title: 'Toggl',
       image: togglLogo,
       type: 'Tool',
-      description: 'The best task tracker out there. Easy to use and even easier to see detailed time reports.',
+      description: 'The best time and task tracker out there. Easy to use and even easier to see detailed time reports.',
       url: 'https://toggl.com/'
     },
     {

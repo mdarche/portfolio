@@ -48,7 +48,7 @@ const dragonLG = require('../images/work/spacex/dragon@2x.png');
 const uxDesign = {
   data: [
     {
-      title: 'Web & UX Design',
+      title: 'Web & UI Design',
       category: 'Design',
       banner: webDevImage,
       p1: 'As a long-time fan of Photoshop, I decided to journey into Web six years ago. Modern web browsers and touch screens bring a whole new element to user centered design: interactivity and user experience. There\'s nothing more satisfying than a clean design that offers interesting user interactions and feedback.',
@@ -83,21 +83,6 @@ const uxDesign = {
         [filterSM, filterLG],
         [menuSM, menuLG],
         [searchSM, searchLG]
-      ]
-    },
-    {
-      title: 'Ecommerce Designs',
-      id: 3,
-      p1: 'I\'ve designed several mockups for Shopify templates over the last few years so I now have a strong understanding of design conventions for online stores. Most of our clients have been Apparel businesses, but these designs can be skinned for any type of business.',
-      p2: 'Included are a few snapshots of the process and the results of my ideas.',
-      tools: 'Photoshop, Illustrator',
-      featuredImage: webDevImage,
-      images: [
-        [
-        webDevImage,
-        webDevImage,
-        webDevImage
-        ]
       ]
     },
     {

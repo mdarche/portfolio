@@ -4,7 +4,7 @@
   overflow: hidden;
   background: linear-gradient(to bottom, #160059 0%, #160059 30%, #5b0d4e 50%, #c2213c 90%, #c2213c 100%);
   @include background(center bottom, 130%, '');
-  @include animation('gradientChange 6s ease;');
+  @include animation('gradientChange 5s ease;');
   @include height-width(100vh, 100%);
 
   .stars {
@@ -36,7 +36,7 @@
     background-position-x: center;
     z-index: 0;
     @include background('', contain, no-repeat);
-    @include animation('sunTranslate ease 5s');
+    @include animation('sunTranslate ease 5.5s');
     @include bp-small { display: none; }
   }
 
@@ -79,7 +79,7 @@
 }
 
 @include keyframes(sunTranslate) {
-  0% { margin-top: 35%; height: 400px; opacity: 0; }
-  30% { margin-top: 35%; height: 400px; opacity: 1; }
+  0% { margin-top: 37%; height: 400px; opacity: 0; }
+  30% { margin-top: 37%; height: 400px; opacity: 1; }
   100% { margin-top: 13.5%; height: 240px; }
 }

@@ -8,10 +8,10 @@ const projectCategories = {
     {
       id: 0,
       image: uxImage,
-      title: 'Web & UX Design',
+      title: 'Web & UI Design',
       column: 'col-sm-8',
       description: 'Clean design and delightful interactions',
-      path: 'web-ux-design'
+      path: 'web-ui-design'
     },
     {
       id: 1,

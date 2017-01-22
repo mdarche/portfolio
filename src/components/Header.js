@@ -64,7 +64,7 @@ export default class Header extends Component {
               <li className="dropdown">
                 <a href="/category-grid" className={dropClass} data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span className="caret" /></a>
                 <ul className="dropdown-menu">
-                  <li><Link to={'/work/web-ux-design'}>Web & UX Design</Link></li>
+                  <li><Link to={'/work/web-ui-design'}>Web & UI Design</Link></li>
                   <li role="separator" className="divider" />
                   <li><Link to={'/work/identity-design'}>Identity Design</Link></li>
                   <li role="separator" className="divider" />
@@ -74,7 +74,7 @@ export default class Header extends Component {
                 </ul>
               </li>
               <li><a className={linkClass} href="https://github.com/mdarche" rel="noopener noreferrer" target="_blank"><i className="fa fa-github" /></a></li>
-              <li><a className={linkClass} href="http://behance.com/" rel="noopener noreferrer" target="_blank"><i className="fa fa-behance" /></a></li>
+              <li><a className={linkClass} href="https://www.behance.net/MikeDarche" rel="noopener noreferrer" target="_blank"><i className="fa fa-behance" /></a></li>
               <li><a className={linkClass} href="https://www.linkedin.com/in/mdarche" rel="noopener noreferrer" target="_blank"><i className="fa fa-linkedin" /></a></li>
             </ul>
           </div>

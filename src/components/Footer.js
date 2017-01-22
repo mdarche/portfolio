@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="divider-light" />
             <ul>
               <li><a href="/#about">About Me</a></li>
-              <li><Link to={'/work/web-ux-design'}>Web & UX Design</Link></li>
+              <li><Link to={'/work/web-ui-design'}>Web & UI Design</Link></li>
               <li><Link to={'/work/identity-design'}>Identity Design</Link></li>
               <li><Link to={'/work/print-design'}>Print Design</Link></li>
               <li><Link to={'/work/web-ios-development'}>Web & iOS Dev</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
               <li><a rel="noopener noreferrer" target="_blank" href="https://www.pinterest.com/mdarshay/"><i className="fa fa-pinterest" /></a></li>
               <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/mdarche"><i className="fa fa-github" /></a></li>
               <li><a rel="noopener noreferrer" target="_blank" href="https://www.behance.net/MikeDarche"><i className="fa fa-behance" /></a></li>
-              <li><a rel="noopener noreferrer" target="_blank" href="https://plus.google.com/u/0/114770771384800712851"><i className="fa fa-google-plus" /></a></li>
+              <li><a rel="noopener noreferrer" target="_blank" href="https://medium.com/@mkdarche"><i className="fa fa-medium" /></a></li>
               <li><a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/mdarche"><i className="fa fa-facebook-square" /></a></li>
             </ul>
             <p className="email">

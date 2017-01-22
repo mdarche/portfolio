@@ -10,9 +10,7 @@ class ImageModal extends Component {
   }
 
   render() {
-    console.log(this.props.toggleOn);
     const modalClass = this.props.toggleOn ? classnames('modal-overlay', 'show') : 'modal-overlay';
-    console.log(this.props.image);
 
     return (
       <div className={modalClass}>

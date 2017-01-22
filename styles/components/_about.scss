@@ -6,6 +6,10 @@
 
   #nameBG { @include gray-title(); }
 
+  p, ul{
+    font-size: 18px;
+  }
+
   h4 {
     @include fadeIn-title(140px);
     opacity: 0;
@@ -25,6 +29,8 @@
 
 .portrait img {
   width: 350px;
+  object-fit: contain;
   margin-top: -40px;
+  margin-bottom: 30px;
   @include bp-small { padding: 0px 40px; }
 }

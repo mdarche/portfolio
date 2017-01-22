@@ -11,7 +11,7 @@ export function fetchCategory(path) {
   let request;
 
   switch (path) {
-    case 'web-ux-design':
+    case 'web-ui-design':
       request = uxDesign;
       break;
     case 'identity-design':
