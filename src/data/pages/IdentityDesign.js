@@ -21,13 +21,13 @@ const identityDesign = {
       title: 'Identity Design',
       category: 'Design',
       banner: identityImage,
-      p1: 'Jeff Bezos and dozens of other business leaders often say that \'Your brand is what people say about you behind your back\'. I think it\'s incredible how terrible products can be saved by powerful branding, and amazing products might never be recognized if they lack a strong identity.',
-      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always drawn me to design. In the last 3 years, I\'ve had the chance to develop or co-develop brand identities on a few different projects. Below is a small sample of my work.'
+      p1: 'Jeff Bezos and dozens of other business leaders say that \'Your brand is what people say about you behind your back\'. I think it\'s incredible how terrible products can be saved by powerful branding, and amazing products might never be recognized if they lack a strong identity.',
+      p2: 'Sexy logos and corresponding brand standards are two disciplines that have always drawn me to design. In the last 3 years, I\'ve had the chance to develop or co-develop brand identities on a few different projects. I have worked on the visual components as well as the less tangible guidelines for company voice and messaging. Below is a small sample of my work.'
     },
     {
       title: 'Logo Design',
       id: 1,
-      p1: 'Over the years I have developed numerous logos and logo marks for new brands (some are also personal projects) and existing companies. Here are a collection of my favorite designs.',
+      p1: 'Here is a small collection of my favorite logos and logo marks for new brands and existing companies.',
       p2: '',
       tools: 'Pencils & Paper, Illustrator',
       images: [

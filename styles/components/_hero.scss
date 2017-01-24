@@ -36,7 +36,7 @@
     background-position-x: center;
     z-index: 0;
     @include background('', contain, no-repeat);
-    @include animation('sunTranslate ease 5.5s');
+    @include animation('sunTranslate ease 4.5s');
     @include bp-small { display: none; }
   }
 

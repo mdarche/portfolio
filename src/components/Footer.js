@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Footer = () => {
+  const d = new Date();
+  const n = d.getFullYear();
+
   return (
     <div id="footer">
       <div className="container">
@@ -40,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div className="col-sm-12 copyright">
-            Designed and built by Mike Darche • 2016
+            Designed and built by Mike Darche • {n}
           </div>
 
         </div>

@@ -51,7 +51,7 @@ export default class AboutSection extends Component {
 
             <p>I graduated from the University of Notre Dame in 2014 with a BBA in Management Entrepreneurship and a concentration in Graphic Design. Since then, I teamed up with a few friends to co-run a small web and marketing agency called <a href="http://catalyzemarketing.com">Catalyze</a>. By helping our clients grow their brands online over the last few years, I've spent countless hours learning web development and today's best digital marketing practices.</p>
 
-            <p>My experiences have transformed my design interest into a deep appreciation for web technologies and user experience. In this portfolio, you'll find a selection of my work from recent projects. If you have any questions, feel free to <a href="mailto:michael@catalyzemarketing.com">contact me.</a></p>
+            <p>My experiences have transformed my design interest into a deep appreciation for web technologies and user experience. In this portfolio, you'll find a selection of my favorite work. If you have any questions, feel free to <a href="mailto:michael@catalyzemarketing.com">contact me.</a></p>
 
           </div>
 

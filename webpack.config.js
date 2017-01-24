@@ -4,11 +4,10 @@ var HTMLWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDOR_LIBS = [
-  'lodash', 'redux', 'react-redux', 'react', 'react-dom', 'react-router', 'redux-promise', 'react-retina-image'
+  'lodash', 'redux', 'react-redux', 'react', 'react-dom', 'react-router', 'redux-promise'
 ];
 
 module.exports = {
-  // devtool: 'cheap-module-source-map',
   entry: {
     bundle: './src/index.js',
     vendor: VENDOR_LIBS
@@ -46,13 +45,15 @@ module.exports = {
     historyApiFallback: true,
     contentBase: './'
   },
-  // performance: {
-  //   hints: false
-  // },
+  performance: {
+    hints: false
+  },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     }),
+    new webpack.EnvironmentPlugin(['NODE_ENV']),
+    // new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest']
     }),

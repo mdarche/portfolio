@@ -17,13 +17,13 @@ const printDesign = {
       title: 'Print Design',
       category: 'Design',
       banner: webDevImage,
-      p1: 'Any young designer knows that when you use Photoshop in high school or college, you become the go-to friend for creating posters, T-Shirts, and signs. These types of print tasks played a big role in developing my interest for design.',
+      p1: 'Any young designer knows that Photoshop skills in high school or college make you the go-to friend for creating posters, T-Shirts, and signs. These types of print tasks played a big role in developing my interest for design.',
       p2: 'I haven\'t done a ton of print work lately, but there\'s no denying the  overlap between print and digital design principles. Whenever I get the chance, I enjoy working on projects that will make it from the computer screen to the printer.'
     },
     {
       title: 'Assorted Projects',
       id: 2,
-      p1: 'Because my recent work has mostly been digital, I\'m going to cheat here and lump several print samples under one umbrella.',
+      p1: 'I\'m going to cheat here and lump several print samples under one umbrella.',
       p2: '',
       tools: 'Pencil, Paper, InDesign, Illustrator, Photoshop',
       featuredImage: webDevImage,

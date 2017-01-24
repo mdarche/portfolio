@@ -57,8 +57,8 @@ const uxDesign = {
     {
       title: 'Birthday Alert',
       id: 2,
-      p1: 'Birthday Alert is my plan for a mobile app that uses your Contact list and Facebook account to schedule customized birthday reminders. I find that Facebook does a spotty job of sending birthday notifications, so an app like this would bail me out of all sorts of sticky situations. My design is minimal yet very practical.',
-      p2: 'You can view upcoming birthdays in a calendar or a list view. You can also select specific individuals that merit multiple push notifications to ensure you don\'t forget to reach out.',
+      p1: 'Birthday Alert is my concept for a mobile app that uses your contact list and Facebook account to schedule customized birthday reminders. I find that Facebook does a spotty job of sending push notifications for birthdays, so an app like this would be extremely helpful for people who also suffer from this issue. It\'s a minimal design that covers all of the bases.',
+      p2: 'You can view upcoming birthdays in a calendar or a list view. You can also select specific individuals that warrant multiple push notifications to ensure you don\'t forget to reach out.',
       tools: 'Photoshop, Illustrator',
       featuredImage: webDevImage,
       images: [
@@ -73,8 +73,8 @@ const uxDesign = {
     {
       title: 'GymSpotter',
       id: 1,
-      p1: 'GymSpotter is a simple gym discovery application that I\'m building in React Native for Android and iOS. The idea was born out of my frustration to find specific types of gyms in cities that I often visit. At its core, GymSpotter is an improved skin for querying Google Places with a pre-defined set of keywords.',
-      p2: 'This style is heavily influenced by Google\'s Material Design guidelines. It neatly delivers all of the information you need to find your ideal workout, no matter where you go.',
+      p1: 'GymSpotter is a simple gym discovery application that I\'m building in React Native for Android and iOS. The idea was born out of my frustration to find specific types of gyms in cities that I often visit. GymSpotter is basically an improved skin for querying Google Places with a pre-defined set of keywords.',
+      p2: 'This style is heavily influenced by Google\'s Material Design guidelines. It delivers all of the information you need to find your ideal workout, no matter where you go.',
       tools: 'Photoshop, Illustrator, Framer',
       images: [
         [loginSM, loginLG],
@@ -88,8 +88,8 @@ const uxDesign = {
     {
       title: 'SpaceX Mobile Redesign',
       id: 4,
-      p1: 'Elon Musk has been a huge inspiration to me, so I was shocked to see the miserable state of the SpaceX website. You have a company with the biggest vision in human history rocking a boring, unresponsive website... What?!',
-      p2: 'I don\'t normally do Fanboy projects, but this time I felt compelled. If I had the chance to redesign this site I would emphasize beautiful photography, video, and interactive tours of the Falcon 9 and Dragon rockets. I would also design it with a Mobile First mentality like you see here. I used the existing color palette and typography to avoid altering the SpaceX brand.',
+      p1: 'Elon Musk has been a huge inspiration to me, so I was shocked to see the miserable state of the SpaceX website. SpaceX is a company with the biggest vision in human history, but their site is boring and unresponsive... What?!',
+      p2: 'I don\'t normally do Fanboy Projects, but this time I felt compelled. If I had the chance to redesign this site I would emphasize beautiful photography, video (& live video), and interactive tours of the Falcon 9 and Dragon rockets. I would also design it with a Mobile First mentality like you see here. I used the existing color palette and typography to avoid altering the SpaceX brand.',
       tools: 'Photoshop, Illustrator, Framer',
       featuredImage: webDevImage,
       images: [

@@ -16,7 +16,7 @@
 
 .navbar-default {
   transition-duration: 0.5s;
-  border-color: rgba(231, 231, 231, 0.18);
+  border-color: transparent;
 
   .logo {
     width: 172px;
@@ -50,8 +50,7 @@
 
 .navbar-fixed-top {
   background-color: transparent;
-  border:none;
-  // border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .navbar-fixed-top.show {
@@ -82,7 +81,6 @@
 
   @include bp-small {
     background-color: rgba(255, 255, 255, 0.13) !important;
-    li a { color: white !important; }
   }
 }
 
